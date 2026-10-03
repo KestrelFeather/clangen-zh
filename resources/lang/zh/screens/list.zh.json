@@ -1,0 +1,21 @@
+{
+    "zh": {
+        "favorite_hide_tooltip": "隐藏收藏标记",
+        "favorite_show_tooltip": "显示收藏标记",
+        "view_dead": "查看逝者",
+        "view_dead_tooltip": "查看死后世界中的猫咪",
+        "view_living": "查看生者",
+        "view_living_tooltip": "查看活着的猫咪",
+        "choose_group": "选择要查看的群体：",
+        "filter_label": "排序：",
+        "filter_age": "年龄 ↑",
+        "filter_reverse_age": "年龄 ↓",
+        "filter_death": "死亡时间",
+        "filter_exp": "经验",
+        "filter_id": "编号",
+        "filter_rank": "身份",
+        "filter_name": "名字",
+        "filter_reverse_name": "名字 ↓",
+        "temper": "%{group}给外界的印象是%{temper}。"
+    }
+}

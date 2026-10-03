@@ -38,10 +38,20 @@ def generate_screen_scale(input_file, output_file, multiplier):
 
     modified_data = _multiply_numbers(data, multiplier)
 
+    # Locale-specific fonts also survive theme regeneration when the window scales.
+    # Icon-only buttons retain ClanGen's custom symbol glyphs in both languages.
+    for element, styling in modified_data.items():
+        font = styling.get("font")
+        if isinstance(font, dict):
+            chinese_font = dict(font, locale="zh", name="notocjk")
+            if element == "@buttonstyles_icon":
+                chinese_font["name"] = "clangen"
+            styling["font"] = [font, chinese_font]
+
     if not os.path.exists(output_file):
         from pathlib import Path
 
         p = Path(output_file)
-        os.makedirs(p.parent)
+        os.makedirs(p.parent, exist_ok=True)
     with open(os.path.abspath(output_file), "w", encoding="utf-8") as writefile:
         json.dump(modified_data, writefile, indent=4)

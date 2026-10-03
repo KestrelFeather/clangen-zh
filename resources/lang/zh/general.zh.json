@@ -1,0 +1,226 @@
+{
+    "zh": {
+        "moon_date": "第 %{moon} 个月亮",
+        "guide": "引路亡魂",
+        "living_group": "%{group} %{rank}",
+        "past_no_group": "曾任%{rank}",
+        "past_group": "曾任%{group} %{rank}",
+        "kitten_profile": "年幼",
+        "adolescent": "青少年",
+        "young adult": "青年",
+        "adult": "成年",
+        "senior adult": "壮年",
+        "senior": "老年",
+        "lost": "失踪",
+        "she-cat": "母猫",
+        "tom": "公猫",
+        "cat": "猫",
+        "female": "雌性",
+        "male": "雄性",
+        "trans female": "跨性别雌性",
+        "trans male": "跨性别雄性",
+        "nonbinary": "非二元性别",
+        "can_work": "可以履行职责",
+        "cant_work": "暂时无法履行职责",
+        "cant_work_condition": "这种状况使其无法履行职责",
+        "exp_label": "经验：%{exp}",
+        "newleaf": "新叶季",
+        "Newleaf": "新叶季",
+        "greenleaf": "绿叶季",
+        "Greenleaf": "绿叶季",
+        "leaf-fall": "落叶季",
+        "Leaf-fall": "落叶季",
+        "leaf-bare": "秃叶季",
+        "Leaf-bare": "秃叶季",
+        "relation_BLOOD": "",
+        "relation_ADOPTIVE": "收养关系",
+        "relation_HALF_BLOOD": "同父异母或同母异父",
+        "relation_NOT_BLOOD": "无血缘关系",
+        "relation_RELATED": "有血缘关系",
+        "related_label": "亲缘关系：%{relation}",
+        "related_text": "有亲缘关系",
+        "niece": "侄女／外甥女",
+        "nephew": "侄子／外甥",
+        "siblings_child": "手足的孩子",
+        "aunt": "姑姨辈亲属",
+        "uncle": "叔舅辈亲属",
+        "parents_sibling": "父母的手足",
+        "grandmother": "祖辈",
+        "grandfather": "祖辈",
+        "grandparent": "祖辈",
+        "granddaughter": "孙辈",
+        "grandson": "孙辈",
+        "grandchild": "孙辈",
+        "mother": "亲生父母",
+        "father": "亲生父母",
+        "parent": "亲生父母",
+        "daughter": "孩子",
+        "son": "孩子",
+        "child": "孩子",
+        "sister": "手足",
+        "brother": "手足",
+        "sibling": "手足",
+        "sibling_littermate": "%{relation}（同窝）",
+        "cousin_male": "堂／表亲",
+        "cousin_female": "堂／表亲",
+        "cousin_nb": "堂／表亲",
+        "clan": "%{name}族",
+        "clan_suffix": "族",
+        "starclan": "星族",
+        "dark_forest": "黑森林",
+        "the_dark_forest": "黑森林",
+        "unknown_residence": "未知居所",
+        "your_clan": "你的族群",
+        "cotc": "族外猫",
+        "empty": "空",
+        "none": "无",
+        "name_search": "搜索名字",
+        "has_a_mate": "已有伴侣",
+        "cats_mate": "%{name}的伴侣",
+        "mate_none": "伴侣：无",
+        "mate_living": "（在世）",
+        "mate_dead": "（已故）",
+        "mate_away": "（在外）",
+        "mentor_label": "导师：%{mentor}",
+        "dead_label": "%{name}（已故）",
+        "mark_favorite": "加入收藏",
+        "remove_favorite": "取消收藏",
+        "has_permanent_condition": "有永久性健康状况",
+        "born_with": "先天具有此状况",
+        "had_injury_for": "已受伤%{moons}",
+        "pregnant_for": "已怀孕%{moons}",
+        "recovering_from_birth_for": "产后已恢复%{moons}",
+        "sick": "患病",
+        "injured": "受伤",
+        "grieving": "哀悼中",
+        "fleas": "有跳蚤",
+        "is_infected": "感染",
+        "is_festering": "化脓",
+        "leader": {
+            "one": "族长",
+            "many": "族长"
+        },
+        "deputy": {
+            "one": "副族长",
+            "many": "副族长"
+        },
+        "warrior": {
+            "one": "武士",
+            "many": "武士"
+        },
+        "medicine cat": {
+            "one": "巫医",
+            "many": "巫医"
+        },
+        "mediator": {
+            "one": "调解者",
+            "many": "调解者"
+        },
+        "apprentice": {
+            "one": "学徒",
+            "many": "学徒"
+        },
+        "medicine cat apprentice": {
+            "one": "巫医学徒",
+            "many": "巫医学徒"
+        },
+        "mediator apprentice": {
+            "one": "调解者学徒",
+            "many": "调解者学徒"
+        },
+        "queen": {
+            "one": "猫后",
+            "many": "猫后"
+        },
+        "queen/pregnant": {
+            "one": "猫后／怀孕的猫",
+            "many": "猫后／怀孕的猫"
+        },
+        "newborn": {
+            "one": "新生幼崽",
+            "many": "新生幼崽"
+        },
+        "kitten": {
+            "one": "幼崽",
+            "many": "幼崽"
+        },
+        "kit": {
+            "one": "幼崽",
+            "many": "幼崽"
+        },
+        "elder": {
+            "one": "长老",
+            "many": "长老"
+        },
+        "loner": {
+            "one": "独行猫",
+            "many": "独行猫"
+        },
+        "rogue": {
+            "one": "流浪猫",
+            "many": "流浪猫"
+        },
+        "kittypet": {
+            "one": "宠物猫",
+            "many": "宠物猫"
+        },
+        "former Clancat": {
+            "one": "前族猫",
+            "many": "前族猫"
+        },
+        "clancat": {
+            "one": "族猫",
+            "many": "族猫"
+        },
+        "exiled": {
+            "one": "被放逐于",
+            "many": "被放逐于"
+        },
+        "mate": {
+            "one": "伴侣",
+            "many": "伴侣"
+        },
+        "mentor": {
+            "one": "导师",
+            "many": "导师"
+        },
+        "moons_age": {
+            "one": "%{count} 个月亮",
+            "many": "%{count} 个月亮"
+        },
+        "moons_age_in_death": {
+            "one": "死后 %{count} 个月亮",
+            "many": "死后 %{count} 个月亮"
+        },
+        "moons_age_in_life": {
+            "one": "生前 %{count} 个月亮",
+            "many": "生前 %{count} 个月亮"
+        },
+        "mate_label": {
+            "one": "伴侣：%{mates}",
+            "many": "伴侣：%{mates}"
+        },
+        "apprentice_label": {
+            "one": "学徒：%{apprentices}",
+            "many": "学徒：%{apprentices}",
+            "zero": ""
+        },
+        "former_apprentice_label": {
+            "one": "曾指导的学徒：%{apprentices}",
+            "many": "曾指导的学徒：%{apprentices}"
+        },
+        "had_perm_condition_for": {
+            "one": "此状况已持续 %{count} 个月亮",
+            "many": "此状况已持续 %{count} 个月亮"
+        },
+        "mate_extra": {
+            "one": "另外 %{count} 只",
+            "many": "另外 %{count} 只"
+        },
+        "apprentice_extra": {
+            "one": "另外 %{count} 只",
+            "many": "另外 %{count} 只",
+            "zero": ""
+        }
+    }
+}

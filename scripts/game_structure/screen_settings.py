@@ -329,6 +329,13 @@ def load_manager(res: Tuple[int, int], screen_offset: Tuple[int, int], scale: fl
     manager.add_font_paths(
         font_name="clangen", regular_path="resources/fonts/clangen.ttf"
     )
+    manager.add_font_paths(
+        font_name="notocjk",
+        regular_path="resources/fonts/NotoSansCJKsc-Regular.otf",
+        bold_path="resources/fonts/NotoSansCJKsc-Bold.otf",
+        italic_path="resources/fonts/NotoSansCJKsc-Regular.otf",
+        bold_italic_path="resources/fonts/NotoSansCJKsc-Bold.otf",
+    )
 
     generate_screen_scale(
         "resources/theme/master_screen_scale.json",

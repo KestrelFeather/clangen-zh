@@ -277,20 +277,28 @@ class MakeClanScreen(Screens):
         elif event.key == pygame.K_RIGHT:
             if not self.elements["name_entry"].is_focused:
                 new_name = sub(
-                    r"[^A-Za-z0-9 ]+", "", self.elements["name_entry"].get_text()
+                    r"[^A-Za-z0-9 \u3400-\u4dbf\u4e00-\u9fff]+",
+                    "",
+                    self.elements["name_entry"].get_text(),
                 ).strip()
                 if not new_name:
-                    self.elements["error"].set_text("Your Clan's name cannot be empty")
+                    self.elements["error"].set_text(
+                        "screens.make_clan.error_clan_name_empty"
+                    )
                     self.elements["error"].show()
                     return
                 self.clan_name = new_name
                 self.open_choose_leader()
         elif event.key == pygame.K_RETURN:
             new_name = sub(
-                r"[^A-Za-z0-9 ]+", "", self.elements["name_entry"].get_text()
+                r"[^A-Za-z0-9 \u3400-\u4dbf\u4e00-\u9fff]+",
+                "",
+                self.elements["name_entry"].get_text(),
             ).strip()
             if not new_name:
-                self.elements["error"].set_text("Your Clan's name cannot be empty")
+                self.elements["error"].set_text(
+                    "screens.make_clan.error_clan_name_empty"
+                )
                 self.elements["error"].show()
                 return
             self.clan_name = new_name
@@ -1442,7 +1450,7 @@ class MakeClanScreen(Screens):
         self.elements["name_entry"].set_forbidden_characters("forbidden_file_path")
         self.elements["name_entry"].set_text_length_limit(11)
         self.elements["clan"] = pygame_gui.elements.UITextBox(
-            "-Clan",
+            "general.clan_suffix",
             ui_scale(pygame.Rect((375, 600), (100, 25))),
             object_id="#text_box_30_horizcenter_light",
             manager=MANAGER,
@@ -1474,7 +1482,7 @@ class MakeClanScreen(Screens):
             manager=MANAGER,
         )
         self.elements["clan_name"] = pygame_gui.elements.UITextBox(
-            self.clan_name + "Clan",
+            i18n.t("general.clan", name=self.clan_name),
             ui_scale(pygame.Rect((292, 100), (216, 50))),
             object_id=ObjectID("#text_box_30_horizcenter_vertcenter", "#dark"),
             manager=MANAGER,
@@ -1945,7 +1953,7 @@ class MakeClanScreen(Screens):
         )
         self.text["clan_name"] = pygame_gui.elements.UILabel(
             ui_scale(pygame.Rect((0, 0), (-1, -1))),
-            text=f"{self.clan_name}Clan",
+            text=i18n.t("general.clan", name=self.clan_name),
             container=self.elements["text_container"],
             object_id=get_text_box_theme("#text_box_40"),
             manager=MANAGER,

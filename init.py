@@ -136,3 +136,7 @@ for module_name, module in list(sys.modules.items()):
         ):
             # Reload the module
             reload(module)
+
+from scripts.ui.cjk_text import install_cjk_wrapping
+
+install_cjk_wrapping()

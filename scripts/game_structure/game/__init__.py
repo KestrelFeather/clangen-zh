@@ -298,7 +298,7 @@ def reset_used_group_IDs():
             used_group_IDs.pop(ID)
 
 
-pygame.display.set_caption("Clan Generator")
+pygame.display.set_caption("ClanGen 中文版 · 非官方试玩 / Chinese Preview")
 
 toggle_fullscreen(
     fullscreen=game_setting_get("fullscreen"),

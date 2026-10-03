@@ -1,0 +1,19 @@
+{
+    "zh": {
+        "heading": "推进一个月亮，继续族群的故事。",
+        "season": "当前季节：%{season}",
+        "age": {
+            "one": "族群年龄：%{count} 个月亮",
+            "many": "族群年龄：%{count} 个月亮"
+        },
+        "timeskip_button": "推进一个月亮",
+        "all events": "全部事件",
+        "ceremonies": "仪式",
+        "births & deaths": "出生与死亡",
+        "relationships": "关系",
+        "health": "健康",
+        "other clans": "其他族群",
+        "miscellaneous": "其他",
+        "no_events": "这个月亮没有发生特别的事。"
+    }
+}

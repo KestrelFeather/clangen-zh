@@ -1,0 +1,17 @@
+{
+    "zh": {
+        "save_check_message": "退出前是否保存游戏？未保存的进度可能丢失。",
+        "game_over_message": "%{clan}已经消亡。族群的故事暂时告一段落，也许该开始新的篇章了。",
+        "game_over_leave_message": "（离开不会删除存档）",
+        "begin_anew": "重新开始",
+        "not_yet": "暂不离开",
+        "change_name_title": "修改 %{name} 的名字",
+        "name_changed": "名字已修改！",
+        "remove_spec_block": "移除特殊名字后缀",
+        "add_spec_block": "重新启用特殊名字后缀",
+        "delete_yes": "确认删除",
+        "delete_no": "返回",
+        "symbol_filters": "族徽筛选",
+        "symbol_filter_title": "显示包含以下元素的族徽："
+    }
+}

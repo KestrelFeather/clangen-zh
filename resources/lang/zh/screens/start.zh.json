@@ -1,0 +1,10 @@
+{
+    "zh": {
+        "content_warning": "非官方中文试玩版 · 部分界面汉化，剧情与猫名仍为英文。<br>内容提示：含轻度血腥、暴力及虐待动物的描写。",
+        "tooltip_twitter": "查看原项目的 Twitter",
+        "tooltip_tumblr": "查看原项目的 Tumblr",
+        "tooltip_discord": "访问原项目 Discord 社区",
+        "error_text": "加载游戏时发生错误：%{error}%{traceback}",
+        "error_gethelp": "请在中文版本仓库反馈问题，并附上错误信息和下方的调用堆栈（如有）。<br><a href=\"https://github.com/KestrelFeather/clangen-zh/issues\">中文版本问题反馈</a>"
+    }
+}

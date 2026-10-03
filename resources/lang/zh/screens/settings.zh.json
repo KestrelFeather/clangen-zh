@@ -1,0 +1,17 @@
+{
+    "zh": {
+        "general": "常规设置",
+        "general_info": "在这里调整游戏设置。更多族群选项请前往游戏内的“族群设置”。",
+        "audio": "声音设置",
+        "audio_info": "调整音乐、环境音与音效。",
+        "ambiance_volume": "环境音量：",
+        "music_volume": "音乐音量：",
+        "sfx_volume": "音效音量：",
+        "info": "关于",
+        "language": "语言",
+        "language_info": "可切换中文和英文。试玩版仅覆盖部分界面，其余内容显示英文；更改后请保存设置。",
+        "lang_english": "英语",
+        "lang_spanish": "西班牙语",
+        "lang_german": "德语"
+    }
+}

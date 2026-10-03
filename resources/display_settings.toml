@@ -17,15 +17,15 @@
         shaders = false
         gore = false
         discord = false
-        check_for_updates = true
-        show_changelog = true
+        check_for_updates = false
+        show_changelog = false
         special_dates = true
         "random relation" = true
         "they them default" = false
 
     [game.other]
         language = [
-            "en", "es", "de"
+            "zh", "en"
         ]
         text_size = [
             0, 1, 2

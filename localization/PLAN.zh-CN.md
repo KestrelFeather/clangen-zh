@@ -1,7 +1,7 @@
 # ClanGen 中文版本维护计划
 
 本项目由 KestrelFeather 独立维护，基于 ClanGenOfficial/clangen，属于非官方中文版本。
-首阶段暂定简体中文、Windows x64、免费发布。当前仅完成仓库初始化与资源盘点；尚无可玩的中文发行包。
+首阶段为简体中文、Windows x64、免费发布。首个界面试玩版为 `v0.13.4-zh.0.1.0-alpha.1`；覆盖范围、操作说明及已知限制见 [PREVIEW.zh-CN.md](PREVIEW.zh-CN.md)，验证证据见 [VALIDATION.zh-CN.md](VALIDATION.zh-CN.md)。
 
 ## 基线和分支
 
@@ -20,10 +20,10 @@
 | 语言按钮 | resources/lang/additional_lang_list.json、scripts/screens/SettingsScreen.py | 语言列表与界面入口 |
 | 资源加载 | scripts/game_structure/localization.py | 原始资源缺文件时回退，不是逐键合并 |
 | 语言配置 | resources/lang/en/config.json、pronouns.en.json | 语法、代词和外貌描述组合 |
-| 字体注册 | scripts/game_structure/screen_settings.py | 注册 notosans 与 clangen 字体 |
+| 字体注册 | scripts/game_structure/screen_settings.py | 注册 notosans、notocjk 与 clangen 字体 |
 | 字体和界面主题 | resources/fonts、resources/theme/master_screen_scale.json | 中文字体、粗体、图标及行高要一起验证 |
 | 事件替换 | scripts/events_module/text_adjust.py | 猫名、族名、代词、动词等标签 |
-| 数据目录 | scripts/housekeeping/datadir.py | 源码运行用当前目录；打包版用 ClanGen/ClanGenBeta 数据目录 |
+| 数据目录 | scripts/housekeeping/datadir.py | 源码运行用当前目录；打包版用 KestrelFeather/ClanGenChinese 独立目录 |
 | 更新检查 | scripts/screens/StartScreen.py | 包含 upstream 仓库身份检查；fork 的 version.ini 必须写对 |
 | 构建发布 | .github/workflows/build.yml | 包含官方更新 API、itch.io 和 GitHub Release 发布步骤，需改造 |
 
@@ -31,10 +31,13 @@
 
 - [x] 固定稳定版基线并建立中文主分支。
 - [x] 提供标准库文本盘点工具，可比较原文新增、修改和删除。
-- [x] 写明非官方身份和未发布状态。
+- [x] 写明非官方身份、当前覆盖和验证状态。
 - [ ] 建立仅服务本 fork 的 CI，再恢复 fork Actions。
 
 ## M1：中文显示和运行小样
+
+首批字体、语言资源、中文断行和核心流程已实现，并完成 19 项专项测试、5 项上游语言/代词测试、实际游戏离屏集成流程及 Windows 打包冷启动。输入法候选窗、所有缩放/全屏组合和旧存档迁移仍待人工桌面验证；不能据此宣称完整游戏已汉化或全面测试。
+
 
 1. 接入具有再分发许可的中文字体，携带许可证；检查图标字符和粗体回退。
 2. 建立简体中文 locale、语言配置和设置入口。资源保留英语回退。
@@ -43,7 +46,7 @@
 5. 完成“新建族群 → 猫咪资料 → 一次巡逻 → 推进月亮 → 保存并重启读取”。
 6. 确认代词、名称和历史文本在切换语言及读档后正确。
 
-交付：`v0.13.4-zh.0.1.0-alpha.1` 候选包。只有实际构建并验证后才创建对应 tag / Release。
+交付：`v0.13.4-zh.0.1.0-alpha.1` Windows x64 预发行试玩包。构建入口为 `tools/build_chinese.ps1`，集成验证入口为 `tools/smoke_chinese.py`。后续版本沿用先验证、再创建 tag / Release 的流程。
 
 ## M2：译文规范与批量扩充
 
@@ -57,6 +60,9 @@
 - 完成率分界面、巡逻、月度事件、思想、条件等模块计算，排除内部标识与配置。
 
 ## M3：首个公开试玩版本
+
+首版采用本地独立构建后上传 GitHub pre-release，提供 ZIP、SHA-256 和试玩说明。继承的 Actions 仍关闭；独立自动构建 CI 与自动更新是后续任务。
+
 
 - 使用独立打包存档目录，提供明确的旧存档复制/迁移说明。
 - `version.ini` 标记 KestrelFeather/clangen-zh；验证不会检查或安装官方更新。

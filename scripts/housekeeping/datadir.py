@@ -30,14 +30,17 @@ def setup_data_dir():
 
 
 def get_data_dir():
+    # Explicit override supports portable installations and isolated smoke tests.
+    if os.environ.get("CLANGEN_ZH_DATA_DIR"):
+        return os.path.abspath(os.environ["CLANGEN_ZH_DATA_DIR"])
     if get_version_info().is_source_build:
         return "."
 
     from platformdirs import user_data_dir
 
     if get_version_info().is_dev():
-        return user_data_dir("ClanGenBeta", "ClanGen")
-    return user_data_dir("ClanGen", "ClanGen")
+        return user_data_dir("ClanGenChinesePreview", "KestrelFeather")
+    return user_data_dir("ClanGenChinese", "KestrelFeather")
 
 
 def get_log_dir():

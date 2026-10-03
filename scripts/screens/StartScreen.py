@@ -403,7 +403,7 @@ class StartScreen(Screens):
 
         self.warning_label = pygame_gui.elements.UITextBox(
             "screens.start.content_warning",
-            ui_scale(pygame.Rect((0, 600), (800, 40))),
+            ui_scale(pygame.Rect((0, 580), (800, 65))),
             object_id=ObjectID("#text_box_30_horizcenter", "#dark"),
             manager=MANAGER,
             anchors={

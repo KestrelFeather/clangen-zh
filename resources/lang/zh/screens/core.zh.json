@@ -1,0 +1,24 @@
+{
+    "zh": {
+        "events": "事件",
+        "camp": "返回营地",
+        "header_tooltip": "返回营地",
+        "cat_list": "猫咪",
+        "patrol": "巡逻",
+        "allegiances": "族群成员",
+        "settings": "设置",
+        "clan_settings": "族群设置",
+        "supplies": "物资",
+        "freshkill": "鲜杀堆",
+        "herbs": "草药",
+        "dens": "巢穴",
+        "warriors_den": "武士巢穴",
+        "leader_den": "族长巢穴",
+        "medicine_cat_den": "巫医巢穴",
+        "elders_den": "长老巢穴",
+        "nursery": "育婴室",
+        "clearing": "空地",
+        "apprentices_den": "学徒巢穴",
+        "dev_watermark": "试玩版本：%{ver}"
+    }
+}

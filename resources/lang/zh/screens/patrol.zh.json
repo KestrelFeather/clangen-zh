@@ -1,0 +1,61 @@
+{
+    "zh": {
+        "random_patrol": "随机巡逻类型",
+        "training": "训练",
+        "hunting": "狩猎",
+        "border": "边界巡逻",
+        "herb_gathering": "采集草药",
+        "choose_cats_info": "选择最多六只猫参加巡逻。小队人数越少，获得的经验越多；人数越多则越安全。",
+        "able_cats_label": "可出发的猫",
+        "patrol_label": "巡逻队",
+        "select": "选择",
+        "unavailable": "无法参加",
+        "skills_traits_label": "技能与性格",
+        "remove_all_label": "全部移除",
+        "go_on_patrol": "出发巡逻",
+        "current_prey": "现有猎物：%{prey}",
+        "needed_prey": "所需猎物：%{prey}",
+        "label_patrol_info": "领队：%{leader}<br>队员：%{members}<br>技能：%{skills}<br>性格：%{traits}",
+        "current_patrol_info": "队伍技能：%{skills}<br>队伍性格：%{traits}",
+        "proceed": "继续",
+        "dont_proceed": "不继续",
+        "antagonize": "挑衅",
+        "patrol_again": "再次巡逻",
+        "back_to_clan": "返回族群",
+        "met_outsider": "巡逻队遇见了%{cats}。",
+        "new_outsider": "%{cats}加入了族群。",
+        "outsider_rep_improved": "族群在族外猫中的声誉提高了。",
+        "outsider_rep_neutral": "族群在族外猫中的声誉没有变化。",
+        "outsider_rep_worsened": "族群在族外猫中的声誉下降了。",
+        "clan_rep_improved": "与%{clan}的关系改善了。",
+        "clan_rep_neutral": "与%{clan}的关系没有变化。",
+        "clan_rep_worsened": "与%{clan}的关系恶化了。",
+        "prey_very_small": "带回营地的猎物寥寥无几。",
+        "prey_small": "带回营地的猎物较少。",
+        "prey_medium": "带回营地的猎物数量适中。",
+        "prey_large": "带回营地的猎物很多。",
+        "prey_huge": "带回营地的猎物非常丰富。",
+        "relationship_changed": "族猫之间的关系发生了变化。",
+        "dead_outsider": {
+            "one": "%{cats}的亡魂如今四处游荡。",
+            "many": "%{cats}的亡魂如今四处游荡。"
+        },
+        "lost_cats": {
+            "one": "%{cats}失踪了。",
+            "many": "%{cats}失踪了。"
+        },
+        "herbs_gathered": {
+            "one": "采集到了%{herbs}。",
+            "many": "采集到了%{herbs}。",
+            "zero": "虽然四处寻找，却没有找到草药。"
+        },
+        "herb_log": {
+            "one": "巡逻时采集到了%{herbs}。",
+            "many": "巡逻时采集到了%{herbs}。"
+        },
+        "prey_log": {
+            "one": "巡逻时捕获了 %{count} 份猎物。",
+            "many": "巡逻时捕获了 %{count} 份猎物。"
+        }
+    }
+}

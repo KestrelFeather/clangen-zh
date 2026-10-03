@@ -163,6 +163,7 @@
         "cousin_female": "cousin",
         "cousin_nb": "cousin",
         "clan": "%{name}Clan",
+        "clan_suffix": "-Clan",
         "starclan": "StarClan",
         "dark_forest": "Dark Forest",
         "the_dark_forest": "The Dark Forest",
