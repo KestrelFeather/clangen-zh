@@ -1,0 +1,9 @@
+{
+  "repository": "ClanGenOfficial/clangen",
+  "tag": "v0.13.4",
+  "commit": "0a283f660ef2cc866a0983a3cc38a6d5b82679cc",
+  "fork": "KestrelFeather/clangen-zh",
+  "branch": "chinese-main",
+  "initial_target": "Simplified Chinese, Windows x64",
+  "status": "Project initialized; no Chinese playable release yet"
+}
