@@ -2,14 +2,14 @@
 
 这是 [KestrelFeather/clangen-zh](https://github.com/KestrelFeather/clangen-zh) 独立维护的简体中文本地化项目，基于 [ClanGenOfficial/clangen](https://github.com/ClanGenOfficial/clangen)。
 
-**首个 Windows x64 界面试玩版：`v0.13.4-zh.0.1.0-alpha.1`。这是部分汉化的 alpha，剧情事件、自动猫名和部分次要界面仍为英文。**
+**当前 Windows x64 界面试玩版：`v0.13.4-zh.0.1.0-alpha.2`。这是部分汉化的 alpha，剧情事件、自动猫名和部分次要界面仍为英文。**
 
-[下载中文试玩版](https://github.com/KestrelFeather/clangen-zh/releases/tag/v0.13.4-zh.0.1.0-alpha.1) · [试玩说明](localization/PREVIEW.zh-CN.md) · [验证记录](localization/VALIDATION.zh-CN.md)
+[下载中文试玩版](https://github.com/KestrelFeather/clangen-zh/releases/tag/v0.13.4-zh.0.1.0-alpha.2) · [试玩说明](localization/PREVIEW.zh-CN.md) · [术语依据](localization/TERMINOLOGY.zh-CN.md) · [验证记录](localization/VALIDATION.zh-CN.md)
 
 完整解压 Windows ZIP 后运行 `ClanGenChinese.exe`，无需安装 Python。请保留 `_internal` 文件夹。默认简体中文，可在设置中切换英文。存档与原版分开，初期通过手动下载更新。
 
 - 已接入中文常规/粗体字体和中文换行；翻译了主菜单、主要设置、创建族群、核心导航、资料标签、巡逻操作与月度事件界面的首批文字。
-- 新增 475 个含中文的字符串值（复数分支分别计数），不是全游戏汉化完成率。译文为 AI 辅助初稿，尚无独立人工语言审核。
+- 新增 479 个含中文的字符串值（复数分支分别计数），不是全游戏汉化完成率。译文为 AI 辅助初稿，尚无独立人工语言审核。
 - 基线：上游 `v0.13.4`，commit `0a283f660ef2cc866a0983a3cc38a6d5b82679cc`；主分支 `chinese-main`。
 - 通过中文专项测试、上游语言/代词测试、真实游戏离屏新建/巡逻/存读档流程和打包程序冷启动检查；真实输入法和全部全屏组合尚未验证。
 - [维护与发布计划](localization/PLAN.zh-CN.md) · [初始资源盘点](localization/INVENTORY.zh-CN.md) · [版本记录](localization/upstream.json)。

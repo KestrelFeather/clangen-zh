@@ -26,15 +26,15 @@
         "random relation_tooltip": "初始成员之间会拥有既定的关系。",
         "they them default": "默认使用 they/them 代词",
         "they them default_tooltip": "新生成的猫统一使用 they/them，不受性别影响。试玩版的英文事件仍使用英文代词。",
-        "autosave": "每五个月亮自动保存",
-        "autosave_tooltip": "每推进五个月亮自动保存一次。",
+        "autosave": "每五个月自动保存",
+        "autosave_tooltip": "每推进五个月自动保存一次。",
         "disasters": "允许大规模灾难",
         "disasters_tooltip": "一次灾难可能导致最多三分之一的族猫死亡。",
         "showxp": "显示经验和营养数值",
         "showxp_tooltip": "在经验与营养状态后显示具体数值。",
         "backgrounds": "显示营地背景",
         "backgrounds_tooltip": "即使关闭背景，所选营地仍会影响遇到的事件。",
-        "moons and seasons": "显示月龄和季节",
+        "moons and seasons": "显示族群年龄和季节",
         "moons and seasons_tooltip": "在部分页面显示族群年龄和当前季节。"
     }
 }

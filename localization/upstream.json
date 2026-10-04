@@ -6,5 +6,5 @@
   "branch": "chinese-main",
   "initial_target": "Simplified Chinese, Windows x64",
   "status": "Partial Simplified Chinese interface alpha; Windows x64 preview; English narrative fallback",
-  "chinese_version": "v0.13.4-zh.0.1.0-alpha.1"
+  "chinese_version": "v0.13.4-zh.0.1.0-alpha.2"
 }

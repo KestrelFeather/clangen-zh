@@ -5,11 +5,11 @@
         "header_tooltip": "返回营地",
         "cat_list": "猫咪",
         "patrol": "巡逻",
-        "allegiances": "族群成员",
+        "allegiances": "猫物表",
         "settings": "设置",
         "clan_settings": "族群设置",
         "supplies": "物资",
-        "freshkill": "鲜杀堆",
+        "freshkill": "新鲜猎物",
         "herbs": "草药",
         "dens": "巢穴",
         "warriors_den": "武士巢穴",
@@ -19,6 +19,6 @@
         "nursery": "育婴室",
         "clearing": "空地",
         "apprentices_den": "学徒巢穴",
-        "dev_watermark": "试玩版本：%{ver}"
+        "dev_watermark": "开发版本：%{ver}"
     }
 }

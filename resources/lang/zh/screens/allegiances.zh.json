@@ -1,0 +1,10 @@
+{
+    "zh": {
+        "heading": "<b>%{clan_name}族猫物表</b>",
+        "caring_for": {
+            "one": "<i>（照顾%{kitten}）</i>",
+            "many": "<i>（照顾%{kitten_list}和%{last_kitten}）</i>"
+        },
+        "queens_and_kits": "猫后与幼崽"
+    }
+}

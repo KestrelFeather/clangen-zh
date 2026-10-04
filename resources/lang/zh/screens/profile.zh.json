@@ -2,7 +2,7 @@
     "zh": {
         "tab_relations": "关系",
         "tab_roles": "职责",
-        "tab_personal": "个人",
+        "tab_personal": "个体",
         "tab_dangerous": "危险操作",
         "tab_history": "生平",
         "tab_conditions": "健康",
@@ -28,18 +28,18 @@
         "leave_clan_tooltip": "打开确认窗口，让这只猫离开族群。",
         "adoptive_parents": "养父母",
         "user_notes": "点击勾号，为这只猫添加笔记。",
-        "leader_ceremony": "族长仪式",
+        "leader_ceremony": "九命仪式",
         "eyes_label": "眼睛：%{eyes}",
         "pelt_label": "毛色：%{pelt}",
         "fur_label": "毛长：%{length}",
         "accessory_label": "饰品：%{accessory}",
-        "lives_remaining_label": "剩余生命：%{count}",
+        "lives_remaining_label": "剩余性命：%{count}",
         "experience_label": "经验：%{exp}",
         "backstory_label": "身世：%{backstory}",
         "subtab_favorite_tooltip": "收藏此页签，下次查看生平时默认打开",
         "subtab_unfavorite_tooltip": "取消收藏此页签",
-        "no_moons_tooltip": "显示生平事件发生的月亮数",
-        "show_moons_tooltip": "隐藏生平事件发生的月亮数",
+        "no_moons_tooltip": "显示生平事件发生的月份",
+        "show_moons_tooltip": "隐藏生平事件发生的月份",
         "text_entry_help_tooltip": "笔记支持部分 HTML 标记。<br>使用尖括号包围标记：br 换行，b 加粗，i 斜体，u 下划线。<br>也可用 font 标记设置颜色和字号。请注意，并非所有字体都支持中文。",
         "text_entry_save_tooltip": "锁定并保存笔记",
         "text_entry_edit_tooltip": "编辑笔记",
@@ -52,8 +52,8 @@
         "change_gender_nonbinary": "改为非二元性别",
         "nutrition_text": "营养：%{nutrition_text}",
         "parent_label": {
-            "one": "亲生父母：%{parents}",
-            "many": "亲生父母：%{parents}"
+            "one": "父母：%{parents}",
+            "many": "父母：%{parents}"
         }
     }
 }

@@ -5,7 +5,7 @@
         "hunting": "狩猎",
         "border": "边界巡逻",
         "herb_gathering": "采集草药",
-        "choose_cats_info": "选择最多六只猫参加巡逻。小队人数越少，获得的经验越多；人数越多则越安全。",
+        "choose_cats_info": "选择最多六只猫参加巡逻。巡逻队的猫越少，获得的经验越多；猫越多则越安全。",
         "able_cats_label": "可出发的猫",
         "patrol_label": "巡逻队",
         "select": "选择",

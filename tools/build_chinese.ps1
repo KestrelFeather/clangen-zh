@@ -1,6 +1,6 @@
 param(
     [ValidatePattern('^v[0-9][A-Za-z0-9.+-]*$')]
-    [string]$Version = 'v0.13.4-zh.0.1.0-alpha.1'
+    [string]$Version = 'v0.13.4-zh.0.1.0-alpha.2'
 )
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path $PSScriptRoot -Parent
@@ -20,6 +20,7 @@ try {
         if ($LASTEXITCODE -ne 0) { throw 'PyInstaller build failed' }
     } finally { $env:PATH = $previousPath }
     Copy-Item localization/PREVIEW.zh-CN.md dist/ClanGenChinese/试玩说明.md
+    Copy-Item localization/TERMINOLOGY.zh-CN.md dist/ClanGenChinese/术语依据.md
     Copy-Item LICENSE.md dist/ClanGenChinese/LICENSE.md
     Write-Host 'Built dist/ClanGenChinese. Run the frozen smoke checks and review screenshots before publishing.'
 } finally { Pop-Location }

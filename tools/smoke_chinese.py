@@ -132,6 +132,21 @@ def check_game(namespace):
     assert game.clan.displayname == expected_displayname
     change(GameScreen.CAMP)
     render("15-reloaded")
+    change(GameScreen.ALLEGIANCES)
+    render("16-allegiances")
+    # Check translated supplies labels even when gameplay was exercised in classic.
+    from scripts.screens.screens_core import screens_core
+
+    saved_mode = game.clan.game_mode
+    game.clan.game_mode = "expanded"
+    screens_core.rebuild_core(should_rebuild_bgs=False)
+    change(GameScreen.CAMP)
+    supplies = screens_core.menu_buttons["supplies"]
+    supplies.open_on_hover = False
+    supplies.open()
+    render("17-supplies")
+    supplies.close()
+    game.clan.game_mode = saved_mode
     result = {
         "clan": str(game.clan.name),
         "age": game.clan.age,

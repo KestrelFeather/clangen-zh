@@ -232,7 +232,7 @@ class AllegiancesScreen(Screens):
             _box = ["", ""]
             _box[
                 0
-            ] = f"<b><u>{i18n.t('general.queen', count=2).upper()} AND {i18n.t('general.kit', count=2).upper()}</u></b>"
+            ] = f"<b><u>{i18n.t('screens.allegiances.queens_and_kits').upper()}</u></b>"
 
             # This one is a bit different.  First all the queens, and the kits they are caring for.
             all_entries = []

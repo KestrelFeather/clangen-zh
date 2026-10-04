@@ -1,15 +1,15 @@
 {
     "zh": {
-        "moon_date": "第 %{moon} 个月亮",
+        "moon_date": "第 %{moon} 个月",
         "guide": "引路亡魂",
         "living_group": "%{group} %{rank}",
         "past_no_group": "曾任%{rank}",
         "past_group": "曾任%{group} %{rank}",
         "kitten_profile": "年幼",
-        "adolescent": "青少年",
+        "adolescent": "少年",
         "young adult": "青年",
         "adult": "成年",
-        "senior adult": "壮年",
+        "senior adult": "中年",
         "senior": "老年",
         "lost": "失踪",
         "she-cat": "母猫",
@@ -51,9 +51,9 @@
         "granddaughter": "孙辈",
         "grandson": "孙辈",
         "grandchild": "孙辈",
-        "mother": "亲生父母",
-        "father": "亲生父母",
-        "parent": "亲生父母",
+        "mother": "父母",
+        "father": "父母",
+        "parent": "父母",
         "daughter": "孩子",
         "son": "孩子",
         "child": "孩子",
@@ -89,7 +89,7 @@
         "born_with": "先天具有此状况",
         "had_injury_for": "已受伤%{moons}",
         "pregnant_for": "已怀孕%{moons}",
-        "recovering_from_birth_for": "产后已恢复%{moons}",
+        "recovering_from_birth_for": "产后恢复已持续%{moons}",
         "sick": "患病",
         "injured": "受伤",
         "grieving": "哀悼中",
@@ -157,8 +157,8 @@
             "many": "独行猫"
         },
         "rogue": {
-            "one": "流浪猫",
-            "many": "流浪猫"
+            "one": "泼皮猫",
+            "many": "泼皮猫"
         },
         "kittypet": {
             "one": "宠物猫",
@@ -185,16 +185,16 @@
             "many": "导师"
         },
         "moons_age": {
-            "one": "%{count} 个月亮",
-            "many": "%{count} 个月亮"
+            "one": "%{count} 个月",
+            "many": "%{count} 个月"
         },
         "moons_age_in_death": {
-            "one": "死后 %{count} 个月亮",
-            "many": "死后 %{count} 个月亮"
+            "one": "死后 %{count} 个月",
+            "many": "死后 %{count} 个月"
         },
         "moons_age_in_life": {
-            "one": "生前 %{count} 个月亮",
-            "many": "生前 %{count} 个月亮"
+            "one": "生前 %{count} 个月",
+            "many": "生前 %{count} 个月"
         },
         "mate_label": {
             "one": "伴侣：%{mates}",
@@ -210,8 +210,8 @@
             "many": "曾指导的学徒：%{apprentices}"
         },
         "had_perm_condition_for": {
-            "one": "此状况已持续 %{count} 个月亮",
-            "many": "此状况已持续 %{count} 个月亮"
+            "one": "此状况已持续 %{count} 个月",
+            "many": "此状况已持续 %{count} 个月"
         },
         "mate_extra": {
             "one": "另外 %{count} 只",

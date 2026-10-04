@@ -69,8 +69,8 @@ def test_key_and_file_fallback_and_plural_counts():
     )
     assert manager.get_locale() == "zh"
     assert i18n.t("buttons.new_clan") == "创建族群"
-    assert i18n.t("general.moons_age", count=1) == "1 个月亮"
-    assert i18n.t("general.moons_age", count=7) == "7 个月亮"
+    assert i18n.t("general.moons_age", count=1) == "1 个月"
+    assert i18n.t("general.moons_age", count=7) == "7 个月"
     assert i18n.t("settings.fading") == i18n.t("settings.fading", locale="en")
     from scripts.game_structure.localization import load_lang_resource
 

@@ -1,7 +1,7 @@
 # ClanGen 中文版本维护计划
 
 本项目由 KestrelFeather 独立维护，基于 ClanGenOfficial/clangen，属于非官方中文版本。
-首阶段为简体中文、Windows x64、免费发布。首个界面试玩版为 `v0.13.4-zh.0.1.0-alpha.1`；覆盖范围、操作说明及已知限制见 [PREVIEW.zh-CN.md](PREVIEW.zh-CN.md)，验证证据见 [VALIDATION.zh-CN.md](VALIDATION.zh-CN.md)。
+首阶段为简体中文、Windows x64、免费发布。当前界面试玩版为 `v0.13.4-zh.0.1.0-alpha.2`；覆盖范围、操作说明及已知限制见 [PREVIEW.zh-CN.md](PREVIEW.zh-CN.md)，验证证据见 [VALIDATION.zh-CN.md](VALIDATION.zh-CN.md)。
 
 ## 基线和分支
 
@@ -51,7 +51,7 @@
 ## M2：译文规范与批量扩充
 
 - 建立术语表：原词、建议译名、上下文、采用的译名体系、审核状态。
-- 待定事项：中文出版版本口径、猫咪代词规则、名字前后缀及晋升改名规则。
+- 术语口径：按用户指定的灰机 Wiki 大陆简体用词，来源和判断见 `TERMINOLOGY.zh-CN.md`。猫咪代词规则、名字前后缀及晋升改名规则仍待专项适配。
 - 不直接导入已有社区译文；复用前核实其来源、版本、许可和质量。
 - 先翻译可见字符串，保留 ID、JSON 键、标签、概率、条件和存档字段。
 - 保护 `%{...}`、猫名代号和 HTML 标记；语法标签按解析器规则处理。
