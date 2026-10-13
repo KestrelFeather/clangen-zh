@@ -43,9 +43,9 @@ def generate_screen_scale(input_file, output_file, multiplier):
     for element, styling in modified_data.items():
         font = styling.get("font")
         if isinstance(font, dict):
-            chinese_font = dict(font, locale="zh", name="notocjk")
+            chinese_font = dict(font, locale="zh", name="fusionpixel", antialiased="0")
             if element == "@buttonstyles_icon":
-                chinese_font["name"] = "clangen"
+                chinese_font = dict(font, locale="zh")
             styling["font"] = [font, chinese_font]
 
     if not os.path.exists(output_file):

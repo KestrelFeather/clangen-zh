@@ -48,15 +48,12 @@ def test_chinese_font_covers_translated_characters():
     chars = set()
     for path in ZH.rglob("*.zh.json"):
         for _, value in leaves(json.loads(path.read_text(encoding="utf-8"))["zh"]):
-            chars.update(char for char in value if "\u3400" <= char <= "\u9fff")
+            chars.update(char for char in value if ord(char) > 127)
     assert len(chars) > 300
-    for weight in ("Regular", "Bold"):
-        font = pygame.font.Font(
-            str(ROOT / f"resources/fonts/NotoSansCJKsc-{weight}.otf"), 16
-        )
-        assert all(
-            metric is not None for metric in font.metrics("".join(sorted(chars)))
-        )
+    font = pygame.font.Font(
+        str(ROOT / "resources/fonts/fusion-pixel-12px-proportional-zh_hans.otf"), 16
+    )
+    assert all(metric is not None for metric in font.metrics("".join(sorted(chars))))
 
 
 def test_key_and_file_fallback_and_plural_counts():
@@ -91,7 +88,7 @@ def test_cjk_wrap_preserves_text_and_punctuation():
     from pygame_gui.core.text.text_line_chunk import TextLineChunkFTFont
 
     pygame.font.init()
-    font = GUIFontPygame(str(ROOT / "resources/fonts/NotoSansCJKsc-Regular.otf"), 16)
+    font = GUIFontPygame(str(ROOT / "resources/fonts/fusion-pixel-12px-proportional-zh_hans.otf"), 16)
     original = "族群生活，迎来新的月亮。" * 8
     chunk = TextLineChunkFTFont(
         original, font, False, pygame.Color("black"), True, None
@@ -116,8 +113,10 @@ def test_scaled_theme_preserves_icon_font(tmp_path):
         ROOT / "resources/theme/master_screen_scale.json", generated, 1.5
     )
     theme = json.loads(generated.read_text(encoding="utf-8"))
-    assert theme["button"]["font"][1]["name"] == "notocjk"
+    assert theme["button"]["font"][1]["name"] == "fusionpixel"
     assert theme["button"]["font"][1]["size"] == "24"
+    assert theme["button"]["font"][1]["antialiased"] == "0"
+    assert theme["button"]["font"][0]["name"] == "clangen"
     assert theme["@buttonstyles_icon"]["font"][1]["name"] == "clangen"
 
 

@@ -1,6 +1,6 @@
 # ClanGen 中文试玩版
 
-版本：v0.13.4-zh.0.1.0-alpha.2。基于官方 v0.13.4。
+版本：v0.13.4-zh.0.1.0-alpha.3。基于官方 v0.13.4。
 维护者：KestrelFeather。非官方、免费、部分界面汉化的技术试玩版。
 
 ## 开始游戏
@@ -11,7 +11,9 @@
 
 ## 本次修订
 
-参照猫武士维基（warriors.huijiwiki.com）的大陆简体用词，修正“泼皮猫”“新鲜猎物堆”“月”“猫物表”“九命仪式”等界面译名，并调整部分上下文误译。具体来源与保留用词见源码中的 localization/TERMINOLOGY.zh-CN.md。
+默认中文字体改为 Fusion Pixel 简体中文像素字体，并关闭文字抗锯齿，使中文菜单与游戏像素风更协调。字体文件直接包含在游戏中，无需安装到系统。译文沿用 alpha.2 的灰机 Wiki 术语修订。
+
+常规、粗体和斜体样式共用像素正体字形，以保持小字清晰；界面字号仍保留。非整数缩放时笔画可能不完全均匀。
 
 ## 本版范围
 
@@ -43,5 +45,5 @@
 原作者 just-some-cat；原项目由 SableSteel 和众多贡献者开发。
 官方源码：https://github.com/ClanGenOfficial/clangen
 代码许可证 MPL-2.0；sprites/art/icon 为 CC BY-NC 4.0。保留附带的 LICENSE.md。
-中文字体为 Noto Sans CJK SC，SIL OFL 1.1，许可证在 resources/fonts/NotoSansCJK-LICENSE.txt。
+中文字体为 Fusion Pixel（TakWolf），SIL OFL 1.1，许可证及上游署名在 _internal/resources/fonts/FusionPixel-licenses/；来源记录在同目录的 FusionPixel-SOURCE.md。
 对应版本源码见本仓库同名 tag。不要将本版本误认为官方出品。

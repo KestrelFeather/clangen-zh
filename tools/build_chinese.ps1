@@ -1,6 +1,6 @@
 param(
     [ValidatePattern('^v[0-9][A-Za-z0-9.+-]*$')]
-    [string]$Version = 'v0.13.4-zh.0.1.0-alpha.2'
+    [string]$Version = 'v0.13.4-zh.0.1.0-alpha.3'
 )
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path $PSScriptRoot -Parent
@@ -8,7 +8,7 @@ Push-Location $repoRoot
 try {
     uv sync --frozen --python 3.11 --group build --group dev
     if ($LASTEXITCODE -ne 0) { throw 'Dependency installation failed' }
-    uv run --no-sync pytest tests/test_chinese_localization.py -q
+    uv run --no-sync --python 3.11 pytest tests/test_chinese_localization.py -q
     if ($LASTEXITCODE -ne 0) { throw 'Chinese locale checks failed' }
     $versionText = "[DEFAULT]`nversion_number=$Version`nrelease_channel=stable`nupstream=KestrelFeather/clangen-zh`n"
     [IO.File]::WriteAllText((Join-Path $repoRoot 'version.ini'), $versionText, [Text.UTF8Encoding]::new($false))

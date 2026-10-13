@@ -1,7 +1,7 @@
 # ClanGen 中文版本维护计划
 
 本项目由 KestrelFeather 独立维护，基于 ClanGenOfficial/clangen，属于非官方中文版本。
-首阶段为简体中文、Windows x64、免费发布。当前界面试玩版为 `v0.13.4-zh.0.1.0-alpha.2`；覆盖范围、操作说明及已知限制见 [PREVIEW.zh-CN.md](PREVIEW.zh-CN.md)，验证证据见 [VALIDATION.zh-CN.md](VALIDATION.zh-CN.md)。
+首阶段为简体中文、Windows x64、免费发布。当前界面试玩版为 `v0.13.4-zh.0.1.0-alpha.3`；覆盖范围、操作说明及已知限制见 [PREVIEW.zh-CN.md](PREVIEW.zh-CN.md)，验证证据见 [VALIDATION.zh-CN.md](VALIDATION.zh-CN.md)。
 
 ## 基线和分支
 
@@ -20,7 +20,7 @@
 | 语言按钮 | resources/lang/additional_lang_list.json、scripts/screens/SettingsScreen.py | 语言列表与界面入口 |
 | 资源加载 | scripts/game_structure/localization.py | 原始资源缺文件时回退，不是逐键合并 |
 | 语言配置 | resources/lang/en/config.json、pronouns.en.json | 语法、代词和外貌描述组合 |
-| 字体注册 | scripts/game_structure/screen_settings.py | 注册 notosans、notocjk 与 clangen 字体 |
+| 字体注册 | scripts/game_structure/screen_settings.py | 注册 notosans、fusionpixel 与 clangen 字体 |
 | 字体和界面主题 | resources/fonts、resources/theme/master_screen_scale.json | 中文字体、粗体、图标及行高要一起验证 |
 | 事件替换 | scripts/events_module/text_adjust.py | 猫名、族名、代词、动词等标签 |
 | 数据目录 | scripts/housekeeping/datadir.py | 源码运行用当前目录；打包版用 KestrelFeather/ClanGenChinese 独立目录 |
