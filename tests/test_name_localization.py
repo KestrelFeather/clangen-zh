@@ -63,7 +63,7 @@ def test_former_and_lost_clan_cats_keep_existing_rank_rules():
     assert str(name) == '黑莓掌'
 
 
-@pytest.mark.parametrize('prefix,suffix', [('Sorrel','tail'),('Fire','pelt'),('Unknown','fur'),('Bramble','unknown'),('Jay',''),('我的猫',''),('fire','heart')])
+@pytest.mark.parametrize('prefix,suffix', [('Unreviewedprefix','tail'),('Fire','unreviewedsuffix'),('Unknown','fur'),('Bramble','unknown'),('Jay',''),('我的猫',''),('fire','heart')])
 def test_unconfirmed_custom_and_standalone_names_are_unchanged(prefix,suffix):
     assert display_name(prefix,suffix) == prefix+suffix
 
@@ -71,6 +71,20 @@ def test_unconfirmed_custom_and_standalone_names_are_unchanged(prefix,suffix):
 def test_april_fools_still_uses_original_egg_name(monkeypatch):
     monkeypatch.setitem(constants.CONFIG['fun'],'april_fools',True)
     assert str(name_for()) == 'Brambleegg'
+
+
+@pytest.mark.parametrize('prefix,suffix,expected', [
+    ('Fox','heart','狐心'), ('Wolf','step','狼步'),
+    ('Sorrel','tail','酸模尾'), ('Sage','nose','鼠尾草鼻'),
+    ('Berry','nose','莓鼻'), ('Bramble','berry','黑莓果'),
+    ('Seed','pelt','种皮'), ('Parsley','seed','香芹籽'),
+    ('Fern','pelt','蕨皮'), ('Primrose','paw','报春花爪'),
+    ('Lichen','fur','地衣毛'), ('Moss','fur','苔藓毛'),
+    ('Hawk','wing','鹰翅'), ('Eagle','wing','雕翅'),
+    ('Snowy','ear','雪耳'), ('Buzzard','star','鵟星'),
+])
+def test_reviewed_wiki_conventions_and_position_specific_affixes(prefix,suffix,expected):
+    assert display_name(prefix,suffix) == expected
 
 
 def test_mapping_matches_inventory_and_pixel_font():
