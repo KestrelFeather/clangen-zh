@@ -1082,7 +1082,7 @@ class Condition_Events:
                         event += i18n.t(
                             "hardcoded.condition_retire_adolescent_ceremony",
                             clan=game.clan.displayname,
-                            newname=cat.name.prefix + cat.name.suffix,
+                            newname=cat.name.display_name(),
                         )
 
                     cat.retire_cat()

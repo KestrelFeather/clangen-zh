@@ -91,6 +91,10 @@ def check_game(namespace):
     maker.open_clan_saved_screen()
     render("07-created")
     print("CLAN", game.clan.name, game.clan.age, flush=True)
+    # Exercise a fully reviewed pair in a real profile and subsequent save/reload.
+    game.clan.leader.name.prefix = "Fire"
+    game.clan.leader.name.suffix = "heart"
+    assert str(game.clan.leader.name) == "火星"
     change(GameScreen.CAMP)
     render("08-camp")
     switch_set_value(Switch.cat, game.clan.leader.ID)
@@ -122,12 +126,20 @@ def check_game(namespace):
     events.save_button.save_game(events)
     render("14-events-after")
     expected_ids = sorted(game.clan.clan_cats)
+    expected_affixes = {
+        cat_id: (Cat.fetch_cat(cat_id).name.prefix, Cat.fetch_cat(cat_id).name.suffix)
+        for cat_id in expected_ids
+    }
     expected_name = str(game.clan.name)
     expected_displayname = game.clan.displayname
     change(GameScreen.START)
     namespace["load_game"]()
     assert game.clan.age == old_age + 1
     assert sorted(game.clan.clan_cats) == expected_ids
+    assert {
+        cat_id: (Cat.fetch_cat(cat_id).name.prefix, Cat.fetch_cat(cat_id).name.suffix)
+        for cat_id in expected_ids
+    } == expected_affixes
     assert str(game.clan.name) == expected_name
     assert game.clan.displayname == expected_displayname
     change(GameScreen.CAMP)
