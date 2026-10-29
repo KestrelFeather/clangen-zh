@@ -1,0 +1,108 @@
+{
+    "zh": {
+        "elder_leaves": {
+            "one": "接骨木叶束",
+            "many": "接骨木叶束"
+        },
+        "cobwebs": {
+            "one": "蜘蛛网",
+            "many": "蜘蛛网"
+        },
+        "daisy": {
+            "one": "雏菊",
+            "many": "雏菊"
+        },
+        "horsetail": {
+            "one": "马尾草",
+            "many": "马尾草"
+        },
+        "juniper": {
+            "one": "杜松",
+            "many": "杜松"
+        },
+        "lungwort": {
+            "one": "疗肺草",
+            "many": "疗肺草"
+        },
+        "mallow": {
+            "one": "锦葵",
+            "many": "锦葵"
+        },
+        "marigold": {
+            "one": "金盏花",
+            "many": "金盏花"
+        },
+        "moss": {
+            "one": "苔藓",
+            "many": "苔藓"
+        },
+        "oak_leaves": {
+            "one": "橡树叶束",
+            "many": "橡树叶束"
+        },
+        "ragwort": {
+            "one": "千里光",
+            "many": "千里光"
+        },
+        "raspberry": {
+            "one": "覆盆子",
+            "many": "覆盆子"
+        },
+        "tansy": {
+            "one": "艾菊",
+            "many": "艾菊"
+        },
+        "thyme": {
+            "one": "百里香束",
+            "many": "百里香束"
+        },
+        "wild_garlic": {
+            "one": "野生大蒜",
+            "many": "野生大蒜"
+        },
+        "dandelion": {
+            "one": "蒲公英",
+            "many": "蒲公英"
+        },
+        "mullein": {
+            "one": "毛蕊花",
+            "many": "毛蕊花"
+        },
+        "rosemary": {
+            "one": "迷迭香",
+            "many": "迷迭香"
+        },
+        "burdock": {
+            "one": "牛蒡根",
+            "many": "牛蒡根"
+        },
+        "blackberry": {
+            "one": "黑莓",
+            "many": "黑莓"
+        },
+        "betony": {
+            "one": "水苏",
+            "many": "水苏"
+        },
+        "goldenrod": {
+            "one": "一支黄花",
+            "many": "一支黄花"
+        },
+        "poppy": {
+            "one": "罂粟籽",
+            "many": "罂粟籽"
+        },
+        "plantain": {
+            "one": "车前草束",
+            "many": "车前草束"
+        },
+        "catmint": {
+            "one": "猫薄荷",
+            "many": "猫薄荷"
+        },
+        "herb_used": "m_c接受了%{herb}治疗，所治状况为%{condition}。%{effect}",
+        "mortality_down": "死亡风险降低了。",
+        "duration_down": "会更快康复。",
+        "risks_down": "相关并发状况的风险降低了。"
+    }
+}

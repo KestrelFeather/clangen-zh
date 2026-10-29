@@ -1,0 +1,26 @@
+{
+    "zh": {
+        "YELLOW": "黄色",
+        "AMBER": "琥珀色",
+        "HAZEL": "榛色",
+        "PALEGREEN": "浅绿色",
+        "GREEN": "绿色",
+        "BLUE": "蓝色",
+        "DARKBLUE": "深蓝色",
+        "GREY": "灰色",
+        "CYAN": "青色",
+        "EMERALD": "翠绿色",
+        "PALEBLUE": "浅蓝色",
+        "PALEYELLOW": "浅黄色",
+        "GOLD": "金色",
+        "HEATHERBLUE": "灰紫蓝色",
+        "COPPER": "铜色",
+        "SAGE": "灰绿色",
+        "COBALT": "钴蓝色",
+        "SUNLITICE": "日照冰蓝色",
+        "GREENYELLOW": "黄绿色",
+        "BRONZE": "青铜色",
+        "SILVER": "银色",
+        "ORANGE": "橙色"
+    }
+}

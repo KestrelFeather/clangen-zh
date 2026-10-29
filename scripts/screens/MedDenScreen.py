@@ -485,7 +485,9 @@ class MedDenScreen(Screens):
                 manager=MANAGER,
             )
             med_skill = cat.skills.skill_string(short=True)
-            med_exp = i18n.t("general.exp_label", exp=cat.experience_level)
+            med_exp = i18n.t(
+                "general.exp_label", exp=i18n.t(f"cat.skills.{cat.experience_level}")
+            )
             med_working = True
             if cat.not_working():
                 med_working = False
@@ -598,7 +600,7 @@ class MedDenScreen(Screens):
         herb_supply = game.clan.herb_supply
 
         if herb_supply.total <= 0:
-            herb_list = ["Empty"]
+            herb_list = [i18n.t("general.empty")]
 
         elif game.clan.game_mode != "classic":
             for herb, count in herb_supply.entire_supply.items():

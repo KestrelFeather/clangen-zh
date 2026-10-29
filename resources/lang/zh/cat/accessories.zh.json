@@ -1,0 +1,359 @@
+{
+    "zh": {
+        "MAPLE LEAF": {
+            "zero": "枫叶",
+            "one": "枫叶",
+            "many": "枫叶"
+        },
+        "HOLLY": {
+            "zero": "冬青",
+            "one": "冬青",
+            "many": "冬青"
+        },
+        "BLUE BERRIES": {
+            "zero": "蓝色浆果",
+            "one": "蓝色浆果",
+            "many": "蓝色浆果"
+        },
+        "FORGET ME NOTS": {
+            "zero": "勿忘我花",
+            "one": "勿忘我花",
+            "many": "勿忘我花"
+        },
+        "RYE STALK": {
+            "zero": "黑麦秆",
+            "one": "黑麦秆",
+            "many": "黑麦秆"
+        },
+        "LAUREL": {
+            "zero": "月桂",
+            "one": "月桂",
+            "many": "月桂"
+        },
+        "BLUEBELLS": {
+            "zero": "风铃草",
+            "one": "风铃草",
+            "many": "风铃草"
+        },
+        "NETTLE": {
+            "zero": "荨麻",
+            "one": "荨麻",
+            "many": "荨麻"
+        },
+        "POPPY": {
+            "zero": "罂粟",
+            "one": "罂粟",
+            "many": "罂粟"
+        },
+        "LAVENDER": {
+            "zero": "薰衣草",
+            "one": "薰衣草",
+            "many": "薰衣草"
+        },
+        "HERBS": {
+            "zero": "毛上覆着草药",
+            "one": "一束草药",
+            "many": "草药"
+        },
+        "PETALS": {
+            "zero": "毛上覆着花瓣",
+            "one": "一簇花瓣",
+            "many": "花瓣"
+        },
+        "WISTERIA": {
+            "zero": "紫藤",
+            "one": "紫藤",
+            "many": "紫藤"
+        },
+        "ROSE MALLOW": {
+            "zero": "芙蓉葵",
+            "one": "芙蓉葵",
+            "many": "芙蓉葵"
+        },
+        "PICKLEWEED": {
+            "zero": "盐角草",
+            "one": "盐角草",
+            "many": "盐角草"
+        },
+        "GOLDEN CREEPING JENNY": {
+            "zero": "金叶过路黄",
+            "one": "金叶过路黄",
+            "many": "金叶过路黄"
+        },
+        "DESERT WILLOW": {
+            "zero": "沙漠柳",
+            "one": "沙漠柳",
+            "many": "沙漠柳"
+        },
+        "CACTUS FLOWER": {
+            "zero": "仙人掌花",
+            "one": "仙人掌花",
+            "many": "仙人掌花"
+        },
+        "PRAIRIE FIRE": {
+            "zero": "Prairie fire 花",
+            "one": "Prairie fire 花",
+            "many": "Prairie fire 花"
+        },
+        "VERBENA EAR": {
+            "zero": "马鞭草",
+            "one": "马鞭草",
+            "many": "马鞭草"
+        },
+        "VERBENA PELT": {
+            "zero": "毛上覆着马鞭草",
+            "one": "一束马鞭草",
+            "many": "马鞭草"
+        },
+        "DRY HERBS": {
+            "zero": "毛上覆着干草药",
+            "one": "一束干草药",
+            "many": "干草药"
+        },
+        "DRY CATMINT": {
+            "zero": "干猫薄荷",
+            "one": "干猫薄荷",
+            "many": "干猫薄荷"
+        },
+        "DRY NETTLES": {
+            "zero": "干荨麻",
+            "one": "干荨麻",
+            "many": "干荨麻"
+        },
+        "DRY LAURELS": {
+            "zero": "干月桂",
+            "one": "干月桂",
+            "many": "干月桂"
+        },
+        "OAK LEAVES": {
+            "zero": "橡树叶",
+            "one": "橡树叶",
+            "many": "橡树叶"
+        },
+        "CATMINT": {
+            "zero": "猫薄荷",
+            "one": "猫薄荷",
+            "many": "猫薄荷"
+        },
+        "MAPLE SEED": {
+            "zero": "枫树种子",
+            "one": "枫树种子",
+            "many": "枫树种子"
+        },
+        "JUNIPER": {
+            "zero": "杜松",
+            "one": "杜松",
+            "many": "杜松"
+        },
+        "RED FEATHERS": {
+            "zero": "红雀羽毛",
+            "one": "红雀羽毛",
+            "many": "红雀羽毛"
+        },
+        "BLUE FEATHERS": {
+            "zero": "乌鸦羽毛",
+            "one": "乌鸦羽毛",
+            "many": "乌鸦羽毛"
+        },
+        "JAY FEATHERS": {
+            "zero": "松鸦羽毛",
+            "one": "松鸦羽毛",
+            "many": "松鸦羽毛"
+        },
+        "MOTH WINGS": {
+            "zero": "蛾翅",
+            "one": "蛾翅",
+            "many": "蛾翅"
+        },
+        "CICADA WINGS": {
+            "zero": "蝉",
+            "one": "蝉",
+            "many": "蝉"
+        },
+        "ORANGE POPPY": {
+            "zero": "橙色罂粟",
+            "one": "橙色罂粟",
+            "many": "橙色罂粟"
+        },
+        "CYAN POPPY": {
+            "zero": "青色罂粟",
+            "one": "青色罂粟",
+            "many": "青色罂粟"
+        },
+        "WHITE POPPY": {
+            "zero": "白色罂粟",
+            "one": "白色罂粟",
+            "many": "白色罂粟"
+        },
+        "PINK POPPY": {
+            "zero": "粉色罂粟",
+            "one": "粉色罂粟",
+            "many": "粉色罂粟"
+        },
+        "CLOVER": {
+            "zero": "尾巴上缀着苜蓿",
+            "one": "一束苜蓿",
+            "many": "苜蓿"
+        },
+        "DAISY": {
+            "zero": "尾巴上缀着雏菊",
+            "one": "一束雏菊",
+            "many": "雏菊"
+        },
+        "LILY OF THE VALLEY": {
+            "zero": "铃兰",
+            "one": "铃兰",
+            "many": "铃兰"
+        },
+        "HEATHER": {
+            "zero": "石楠",
+            "one": "石楠",
+            "many": "石楠"
+        },
+        "SNAPDRAGON": {
+            "zero": "金鱼草",
+            "one": "金鱼草",
+            "many": "金鱼草"
+        },
+        "GORSE": {
+            "zero": "金雀花",
+            "one": "金雀花",
+            "many": "金雀花"
+        },
+        "BULB WHITE": {
+            "zero": "白花球茎",
+            "one": "白花球茎",
+            "many": "白花球茎"
+        },
+        "BULB YELLOW": {
+            "zero": "黄花球茎",
+            "one": "黄花球茎",
+            "many": "黄花球茎"
+        },
+        "BULB ORANGE": {
+            "zero": "橙花球茎",
+            "one": "橙花球茎",
+            "many": "橙花球茎"
+        },
+        "BULB PINK": {
+            "zero": "粉花球茎",
+            "one": "粉花球茎",
+            "many": "粉花球茎"
+        },
+        "BULB BLUE": {
+            "zero": "蓝花球茎",
+            "one": "蓝花球茎",
+            "many": "蓝花球茎"
+        },
+        "RASPBERRY": {
+            "zero": "覆盆子",
+            "one": "覆盆子",
+            "many": "覆盆子"
+        },
+        "CATTAIL": {
+            "zero": "香蒲",
+            "one": "香蒲",
+            "many": "香蒲"
+        },
+        "GULL FEATHERS": {
+            "zero": "鸥羽",
+            "one": "鸥羽",
+            "many": "鸥羽"
+        },
+        "SPARROW FEATHERS": {
+            "zero": "麻雀羽毛",
+            "one": "麻雀羽毛",
+            "many": "麻雀羽毛"
+        },
+        "ROSY MOTH WINGS": {
+            "zero": "玫瑰枫蛾翅膀",
+            "one": "玫瑰枫蛾",
+            "many": "玫瑰枫蛾翅膀"
+        },
+        "MORPHO BUTTERFLY": {
+            "zero": "闪蝶翅膀",
+            "one": "闪蝶",
+            "many": "闪蝶翅膀"
+        },
+        "MONARCH BUTTERFLY": {
+            "zero": "帝王蝶翅膀",
+            "one": "帝王蝶",
+            "many": "帝王蝶翅膀"
+        },
+        "BLACK CICADA": {
+            "zero": "黑蝉翅膀",
+            "one": "黑蝉",
+            "many": "黑蝉翅膀"
+        },
+        "ROAD RUNNER FEATHER": {
+            "zero": "走鹃羽毛",
+            "one": "走鹃羽毛",
+            "many": "走鹃羽毛"
+        },
+        "BOW": {
+            "zero": "蝴蝶结",
+            "one": "蝴蝶结",
+            "many": "蝴蝶结"
+        },
+        "BOW_FOIL": {
+            "zero": "箔片蝴蝶结",
+            "one": "箔片蝴蝶结",
+            "many": "箔片蝴蝶结"
+        },
+        "BOW_GRADIENT": {
+            "zero": "彩色蝴蝶结",
+            "one": "彩色蝴蝶结",
+            "many": "彩色蝴蝶结"
+        },
+        "LEATHER": {
+            "zero": "皮项圈",
+            "one": "皮项圈",
+            "many": "皮项圈"
+        },
+        "LEATHER_SPIKE": {
+            "zero": "带尖刺的皮项圈",
+            "one": "带尖刺的皮项圈",
+            "many": "带尖刺的皮项圈"
+        },
+        "LEATHER_GRADIENT": {
+            "zero": "彩色皮项圈",
+            "one": "彩色皮项圈",
+            "many": "彩色皮项圈"
+        },
+        "LEATHER_BELL": {
+            "zero": "带铃铛的皮项圈",
+            "one": "带铃铛的皮项圈",
+            "many": "带铃铛的皮项圈"
+        },
+        "LEATHER_BELL_SPIKE": {
+            "zero": "带铃铛和尖刺的皮项圈",
+            "one": "带铃铛和尖刺的皮项圈",
+            "many": "带铃铛和尖刺的皮项圈"
+        },
+        "LEATHER_BELL_GRADIENT": {
+            "zero": "带铃铛的彩色皮项圈",
+            "one": "带铃铛的彩色皮项圈",
+            "many": "带铃铛的彩色皮项圈"
+        },
+        "NYLON": {
+            "zero": "尼龙项圈",
+            "one": "尼龙项圈",
+            "many": "尼龙项圈"
+        },
+        "NYLON_GRADIENT": {
+            "zero": "彩色尼龙项圈",
+            "one": "彩色尼龙项圈",
+            "many": "彩色尼龙项圈"
+        },
+        "NYLON_BELL": {
+            "zero": "带铃铛的尼龙项圈",
+            "one": "带铃铛的尼龙项圈",
+            "many": "带铃铛的尼龙项圈"
+        },
+        "NYLON_BELL_GRADIENT": {
+            "zero": "带铃铛的彩色尼龙项圈",
+            "one": "带铃铛的彩色尼龙项圈",
+            "many": "带铃铛的彩色尼龙项圈"
+        }
+    }
+}

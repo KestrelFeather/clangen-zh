@@ -44,25 +44,25 @@
                     0,
                     1
                 ],
-                "format": ", ",
-                "post_value": ", "
+                "format": ""
             },
             {
                 "values": [
                     2,
                     3
                 ],
-                "format": " "
+                "format": ""
             },
             {
                 "values": [
                     4,
                     5
                 ],
-                "format": "list",
-                "pre_value": ", with "
+                "format": "，",
+                "pre_value": "，"
             }
         ]
     },
-    "oxford_comma": true
+    "oxford_comma": false,
+    "list_separator": "、"
 }

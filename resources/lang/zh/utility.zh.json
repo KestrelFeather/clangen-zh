@@ -1,0 +1,21 @@
+{
+    "zh": {
+        "items": {
+            "zero": "",
+            "one": "%{item1}",
+            "many": "%{item1}和%{item2}"
+        },
+        "exclamation": "%{text}！",
+        "question": "%{text}？",
+        "first": "第一",
+        "second": "第二",
+        "third": "第三",
+        "fourth": "第四",
+        "fifth": "第五",
+        "sixth": "第六",
+        "seventh": "第七",
+        "eighth": "第八",
+        "ninth": "第九",
+        "indefinite": "%{text}"
+    }
+}

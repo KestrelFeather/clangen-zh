@@ -1,0 +1,28 @@
+{
+    "zh": {
+        "help_tooltip": "c_n的巫医会在每次进入下一个月时，以及外出巡逻时采集草药。下方的日志会记录采集结果。巫医会用草药治疗有需要的伤病猫，帮助它们更快康复。<br><br>将鼠标移到巫医巢穴的图片上，可以查看族群储存的草药。",
+        "hurt_sick_title": "伤病猫",
+        "hurt_sick_label": " 伤病",
+        "log_title": "巫医巢穴日志",
+        "log_label": " 日志",
+        "in_den": "留巢",
+        "out_den": "可以外出",
+        "minor": "轻症",
+        "meds_cover": {
+            "one": "m_c最多能照料一个有 %{clansize} 名成员的族群，包括自己。",
+            "many": "c_n的巫医最多能照料一个有 %{clansize} 名成员的族群，包括巫医自己。"
+        },
+        "expiration": "发现一些储存的%{herbs}已经放得太久，不能再用了。",
+        "better_storage": "%{name}这个月把草药储存得很好，%{herbs}能保存得更久。",
+        "gather_success": "%{name}这个月采集了%{herbs}。",
+        "gather_fail": "%{name}这个月没有采集到草药。",
+        "herb_used": "m_c用了%{herb}来治疗%{condition}。%{effect}",
+        "mortality_down": "死亡的可能性降低了。",
+        "duration_down": "康复需要的时间缩短了。",
+        "risks_down": "病情引发其他问题的风险降低了。",
+        "focus": "族群格外重视草药采集，因此采到了以下草药：%{herbs}。",
+        "blood_loss": "用草药为%{name}止了血。",
+        "loss_event": "族群损失了%{herbs}。",
+        "gain_event": "族群获得了%{herbs}。"
+    }
+}

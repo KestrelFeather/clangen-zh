@@ -786,10 +786,13 @@ class HerbSupply:
         # grab the correct condition dict so that we can modify it
         if condition in treated_cat.illnesses:
             con_info = treated_cat.illnesses[condition]
+            condition_category = "illnesses"
         elif condition in treated_cat.injuries:
             con_info = treated_cat.injuries[condition]
+            condition_category = "injuries"
         else:
             con_info = treated_cat.permanent_condition[condition]
+            condition_category = "permanent_conditions"
             if con_info["born_with"] and con_info["moons_until"] != -2:
                 return
 
@@ -836,9 +839,11 @@ class HerbSupply:
             herb=(
                 self.herb[herb_used].plural_display
                 if amount_used > 1
-                else str("a ") + self.herb[herb_used].singular_display
+                else i18n.t(
+                    "utility.indefinite", text=self.herb[herb_used].singular_display
+                )
             ),
-            condition=condition,
+            condition=i18n.t(f"conditions.{condition_category}.{condition}"),
             effect=effect_message,
         )
 

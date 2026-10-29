@@ -63,7 +63,10 @@ def bs_blurb_text(cat):
         )
     else:
         return event_text_adjust(
-            Cat, i18n.t(f"cat.backstories.{cat.backstory}"), main_cat=cat
+            Cat,
+            i18n.t(f"cat.backstories.{cat.backstory}"),
+            main_cat=cat,
+            clan=game.clan,
         )
 
 
@@ -1012,7 +1015,8 @@ class ProfileScreen(Screens):
 
         # EXPERIENCE
         output += i18n.t(
-            "screens.profile.experience_label", exp=the_cat.experience_level
+            "screens.profile.experience_label",
+            exp=i18n.t(f"cat.skills.{the_cat.experience_level}"),
         )
         if get_clan_setting("showxp"):
             output += " (" + str(the_cat.experience) + ")"
@@ -1317,7 +1321,6 @@ class ProfileScreen(Screens):
         """
         returns the backstory blurb
         """
-        cat_dict = {"m_c": (str(self.the_cat.name), choice(self.the_cat.pronouns))}
         bs_blurb = None
         # if cat has a backstory prepared
         if self.the_cat.backstory:
@@ -1386,8 +1389,7 @@ class ProfileScreen(Screens):
                 f" {i18n.t('cat.backstories.currently_exiled', name=self.the_cat.name)}"
             )
 
-        text = process_text(text, cat_dict)
-        return text
+        return event_text_adjust(Cat, text, main_cat=self.the_cat, clan=game.clan)
 
     def get_scar_text(self):
         """

@@ -868,8 +868,12 @@ class PatrolScreen(Screens):
                 "p_l": self.patrol_obj.patrol_leader,
                 "members": self.get_list_text(members),
                 "patrol_cats": members,
-                "skills": self.get_list_text(skills),
-                "traits": self.get_list_text(traits),
+                "skills": self.get_list_text(
+                    [i18n.t(f"cat.skills.{s}") for s in skills]
+                ),
+                "traits": self.get_list_text(
+                    [i18n.t(f"cat.personality.{t}") for t in traits]
+                ),
             },
         )
 
@@ -1136,8 +1140,12 @@ class PatrolScreen(Screens):
         self.elements["skills_box"].set_text(
             "screens.patrol.current_patrol_info",
             text_kwargs={
-                "skills": ", ".join(patrol_skills),
-                "traits": ", ".join(patrol_traits),
+                "skills": self.get_list_text(
+                    [i18n.t(f"cat.skills.{s}") for s in patrol_skills]
+                ),
+                "traits": self.get_list_text(
+                    [i18n.t(f"cat.personality.{t}") for t in patrol_traits]
+                ),
             },
         )
 
@@ -1438,4 +1446,5 @@ class PatrolScreen(Screens):
             return i18n.t("general.none").capitalize()
         # Removes duplicates.
         patrol_set = list(patrol_list)
-        return ", ".join(patrol_set)
+        separator = "、" if i18n.config.get("locale") == "zh" else ", "
+        return separator.join(patrol_set)

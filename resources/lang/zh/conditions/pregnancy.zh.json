@@ -1,0 +1,19 @@
+{
+    "zh": {
+        "kit_amount": {
+            "one": "一只幼崽",
+            "many": "一窝共 %{count} 只幼崽"
+        },
+        "pregnant_secret": "%{name}带着%{insert}回到营地，却不肯说明幼崽的来历。",
+        "leader_kitting_death": "在产下幼崽后不久死去",
+        "leader_kitting_death_severe": "在艰难的分娩后死去",
+        "kitting_death": "%{name}在分娩时死去了。",
+        "kitting_death_severe": "%{name}在艰难的分娩后死去了。",
+        "half_blood_kitting_thought": {
+            "one": "很庆幸自己的幼崽平安无事",
+            "many": "很庆幸自己的幼崽们平安无事"
+        },
+        "keep_clan_tradition": "%{name}决定依照族群传统为这窝幼崽命名。",
+        "reject_clan_tradition": "%{name}决定不依照族群传统为这窝幼崽命名。"
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "zh": {
+        "WHITE": {
+            "one": "浅色",
+            "many": "浅色"
+        },
+        "PALEGREY": {
+            "one": "灰色",
+            "many": "浅灰色"
+        },
+        "SILVER": {
+            "one": "银色",
+            "many": "银色"
+        },
+        "GREY": {
+            "one": "灰色",
+            "many": "灰色"
+        },
+        "DARKGREY": {
+            "one": "灰色",
+            "many": "深灰色"
+        },
+        "GHOST": {
+            "one": "黑色",
+            "many": "黑色"
+        },
+        "BLACK": {
+            "one": "黑色",
+            "many": "黑色"
+        },
+        "CREAM": {
+            "one": "奶油色",
+            "many": "奶油色"
+        },
+        "PALEGINGER": {
+            "one": "姜黄色",
+            "many": "浅姜黄色"
+        },
+        "GOLDEN": {
+            "one": "金色",
+            "many": "金色"
+        },
+        "GINGER": {
+            "one": "姜黄色",
+            "many": "姜黄色"
+        },
+        "DARKGINGER": {
+            "one": "姜黄色",
+            "many": "深姜黄色"
+        },
+        "SIENNA": {
+            "one": "姜黄色",
+            "many": "深姜黄色"
+        },
+        "LIGHTBROWN": {
+            "one": "棕色",
+            "many": "浅棕色"
+        },
+        "LILAC": {
+            "one": "棕色",
+            "many": "浅棕色"
+        },
+        "BROWN": {
+            "one": "棕色",
+            "many": "棕色"
+        },
+        "GOLDEN-BROWN": {
+            "one": "棕色",
+            "many": "金棕色"
+        },
+        "DARKBROWN": {
+            "one": "棕色",
+            "many": "深棕色"
+        },
+        "CHOCOLATE": {
+            "one": "棕色",
+            "many": "深棕色"
+        },
+        "FULLWHITE": "白色",
+        "SingleColour": "纯色",
+        "SingleColour_long": "%{color}",
+        "TwoColour": "双色",
+        "TwoColour_long": "%{color}",
+        "Tabby": "虎斑",
+        "Tabby_long": "%{color}虎斑",
+        "Speckled": "细斑",
+        "Speckled_long": "带细斑的%{color}",
+        "Bengal": "豹纹",
+        "Bengal_long": "带特殊斑纹的%{color}",
+        "Marbled": "大理石纹",
+        "Marbled_long": "%{color}虎斑",
+        "Ticked": "细纹",
+        "Ticked_long": "%{color}细纹",
+        "Smoke": "烟色",
+        "Smoke_long": "%{color}烟色",
+        "Mackerel": "鱼骨纹",
+        "Mackerel_long": "%{color}虎斑",
+        "Classic": "经典虎斑",
+        "Classic_long": "%{color}虎斑",
+        "Agouti": "刺鼠色",
+        "Agouti_long": "%{color}虎斑",
+        "Singlestripe": "单条纹",
+        "Singlestripe_long": "背部带条纹的%{color}",
+        "Rosette": "玫瑰斑纹",
+        "Rosette_long": "带特殊斑点的%{color}",
+        "Sokoke": "索科克纹",
+        "Sokoke_long": "%{color}虎斑",
+        "Masked": "面罩纹",
+        "Masked_long": "带面罩纹的%{color}虎斑",
+        "Calico": "三花",
+        "Calico_long": "%{color}三花",
+        "Calico_tabby": "三花虎斑",
+        "Calico_tabby_long": "%{color}三花虎斑",
+        "Tortie": "玳瑁",
+        "Tortie_long": "%{color}玳瑁",
+        "Tortie_tabby": "玳瑁虎斑",
+        "Tortie_tabby_long": "%{color}玳瑁虎斑",
+        "mottled": "杂斑",
+        "mottled_long": "%{color}杂斑",
+        "point": "%{color}重点色",
+        "NOTAIL": "没有尾巴",
+        "HALFTAIL": "只有半截尾巴",
+        "NOPAW": "只有三条腿",
+        "NOLEFTEAR": "缺一只耳朵",
+        "NORIGHTEAR": "缺一只耳朵",
+        "NOEAR": "没有耳朵",
+        "vitiligo": "带有白斑",
+        "long_furred": "长毛",
+        "scarred": "伤痕累累的",
+        "fur_short": "短毛",
+        "fur_medium": "中长毛",
+        "fur_long": "长毛"
+    }
+}

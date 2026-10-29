@@ -509,7 +509,9 @@ def event_text_adjust(
             except IndexError:
                 clan_name = "Test"
 
-        text = _replace_clan_name(text, "c_n", str(clan_name) + "Clan")
+        text = _replace_clan_name(
+            text, "c_n", i18n.t("general.clan", name=str(clan_name))
+        )
 
     # prey lists
     text = adjust_prey_abbr(text)
@@ -740,7 +742,7 @@ def adjust_list_text(list_of_items: List) -> str:
         item1 = list_of_items[0]
         item2 = list_of_items[1]
     else:
-        item1 = ", ".join(list_of_items[:-1])
+        item1 = get_lang_config().get("list_separator", ", ").join(list_of_items[:-1])
         if get_lang_config().get("oxford_comma"):
             item1 += ","
         item2 = list_of_items[-1]

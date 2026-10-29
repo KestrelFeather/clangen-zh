@@ -158,6 +158,38 @@ def check_game(namespace):
     supplies.open()
     render("17-supplies")
     supplies.close()
+    # Exercise profile and health translations in the isolated fixture clan.
+    from scripts.clan_resources.herb.herb_effects import HerbEffect
+    from scripts.clan_resources.freshkill import FreshkillPile
+    from scripts.cat.pelts import Pelt
+
+    game.clan.freshkill_pile = FreshkillPile()
+    patient = game.clan.leader
+    patient.backstory = "clan_guide6"
+    patient.get_ill("whitecough", lethal=False)
+    patient.get_injured("sprain", lethal=False)
+    game.clan.herb_supply.storage["catmint"] = [5]
+    game.clan.herb_supply._HerbSupply__apply_herb_effect(
+        patient, "whitecough", "catmint", HerbEffect.MORTALITY, 1, 1
+    )
+    assert "猫薄荷来治疗白咳症" in game.clan.herb_supply.log[-1]
+    game.herb_events_list.append(game.clan.herb_supply.log[-1])
+    switch_set_value(Switch.cat, patient.ID)
+    profile = change(GameScreen.PROFILE)
+    backstory = profile.get_backstory_text()
+    assert "晨光族" in backstory and "c_n" not in backstory
+    assert "with" not in Pelt.describe_appearance(patient)
+    profile.open_sub_tab = "life events"
+    profile.toggle_history_tab()
+    render("18-backstory")
+    profile.toggle_conditions_tab()
+    render("19-conditions")
+    med_den = change(GameScreen.MED_DEN)
+    render("20-medicine-den")
+    med_den.handle_event(
+        pygame.event.Event(pygame_gui.UI_BUTTON_START_PRESS, ui_element=med_den.log_tab)
+    )
+    render("21-treatment-log")
     game.clan.game_mode = saved_mode
     result = {
         "clan": str(game.clan.name),
@@ -167,6 +199,7 @@ def check_game(namespace):
         "patrol_complete": True,
         "moon_skip": True,
         "save_reload": True,
+        "profile_health": True,
         "data_dir": str(data_dir),
     }
     (output / "smoke-result.json").write_text(

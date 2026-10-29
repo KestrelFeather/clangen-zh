@@ -1,0 +1,33 @@
+{
+    "zh": {
+        "permanent condition": "永久性健康状况",
+        "crooked jaw": "下颌歪斜",
+        "lost a leg": "失去一条腿",
+        "born without a leg": "天生缺一条腿",
+        "weak leg": "腿部无力",
+        "twisted leg": "腿部扭曲",
+        "lost their tail": "失去尾巴",
+        "born without a tail": "天生无尾",
+        "paralyzed": "瘫痪",
+        "raspy lungs": "呼吸沙哑",
+        "wasting disease": "消耗性疾病",
+        "blind": "失明",
+        "one bad eye": "单眼视力受损",
+        "failing eyesight": "视力衰退",
+        "partial hearing loss": "听力部分丧失",
+        "deaf": "失聪",
+        "constant joint pain": "持续关节疼痛",
+        "joint pain": "关节疼痛",
+        "seizure prone": "容易抽搐发作",
+        "allergies": "过敏",
+        "constantly dizzy": "持续眩晕",
+        "recurring shock": "反复受惊",
+        "lasting grief": "长久的悲痛",
+        "strange lump": "不明肿块",
+        "absent": "精神恍惚",
+        "persistent headaches": "持续头痛",
+        "selective mutism": "选择性缄默",
+        "damaged throat": "喉咙受损",
+        "unknown_condition_risk_given": "m_c的状况恶化了。"
+    }
+}

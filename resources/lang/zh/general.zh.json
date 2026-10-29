@@ -22,7 +22,7 @@
         "nonbinary": "非二元性别",
         "can_work": "可以履行职责",
         "cant_work": "暂时无法履行职责",
-        "cant_work_condition": "这种状况使其无法履行职责",
+        "cant_work_condition": "因此无法履行职责",
         "exp_label": "经验：%{exp}",
         "newleaf": "新叶季",
         "Newleaf": "新叶季",
