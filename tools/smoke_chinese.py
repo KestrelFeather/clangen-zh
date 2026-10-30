@@ -190,6 +190,11 @@ def check_game(namespace):
         pygame.event.Event(pygame_gui.UI_BUTTON_START_PRESS, ui_element=med_den.log_tab)
     )
     render("21-treatment-log")
+    management = os.environ.get("CLANGEN_ZH_TEST_MANAGEMENT") == "1"
+    if management:
+        from tools.smoke_management import check_management
+
+        check_management(change, render, namespace["load_game"])
     game.clan.game_mode = saved_mode
     result = {
         "clan": str(game.clan.name),
@@ -200,6 +205,7 @@ def check_game(namespace):
         "moon_skip": True,
         "save_reload": True,
         "profile_health": True,
+        "management": management,
         "data_dir": str(data_dir),
     }
     (output / "smoke-result.json").write_text(

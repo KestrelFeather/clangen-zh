@@ -232,11 +232,11 @@ class RelationshipScreen(Screens):
             ui_scale(pygame.Rect((610, 97), (145, 23))), object_id="#search_entry_box"
         )
 
-        self.search_bar_image = pygame.transform.scale(
-            image_cache.load_image(
-                "resources/images/relationship_search.png"
-            ).convert_alpha(),
-            ui_scale_dimensions((228, 39)),
+        self.search_bar_image = get_box(BoxStyles.ROUNDED_BOX, (228, 39))
+        self.search_label = pygame_gui.elements.UILabel(
+            ui_scale(pygame.Rect((537, 95), (70, 25))),
+            "screens.relationship.search",
+            manager=MANAGER,
         )
         self.details_frame_image = get_box(
             BoxStyles.ROUNDED_BOX, (230, 340), sides=(True, False, True, True)
@@ -297,17 +297,19 @@ class RelationshipScreen(Screens):
             anchors={"left_target": self.page_number},
         )
 
-        self.switch_focus_button = UIImageButton(
+        self.switch_focus_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((32, 245), (136, 30))),
-            "",
-            object_id="#switch_focus_button",
+            "screens.relationship.switch_focus",
+            get_button_dict(ButtonStyles.SQUOVAL, (136, 30)),
+            object_id="@buttonstyles_squoval",
             container=self.selected_cat_container,
         )
         self.switch_focus_button.disable()
-        self.view_profile_button = UIImageButton(
+        self.view_profile_button = UISurfaceImageButton(
             ui_scale(pygame.Rect((32, 275), (136, 30))),
-            "",
-            object_id="#view_profile_button",
+            "screens.relationship.view_profile",
+            get_button_dict(ButtonStyles.SQUOVAL, (136, 30)),
+            object_id="@buttonstyles_squoval",
             container=self.selected_cat_container,
         )
         self.view_profile_button.disable()
@@ -354,6 +356,7 @@ class RelationshipScreen(Screens):
         self.back_button.kill()
         del self.back_button
         self.search_bar.kill()
+        self.search_label.kill()
         del self.search_bar
         self.show_dead_text.kill()
         del self.show_dead_text

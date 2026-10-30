@@ -2,6 +2,9 @@
     "en": {
         "heading": "m_c's Relationships",
         "show_dead_checkbox": "Show Dead",
-        "show_empty_checkbox": "Show Empty"
+        "show_empty_checkbox": "Show Empty",
+        "search": "search",
+        "switch_focus": "switch focus",
+        "view_profile": "view profile"
     }
 }

@@ -15,7 +15,7 @@ from ..ui.scale import ui_scale, ui_scale_dimensions
 from .Screens import Screens
 from .enums import GameScreen
 from ..game_structure.game.switches import switch_set_value, switch_get_value, Switch
-from ..game_structure.screen_settings import MANAGER
+from ..game_structure.screen_settings import MANAGER, screen_scale
 from ..ui.generate_box import BoxStyles, get_box
 from ..ui.generate_button import get_button_dict, ButtonStyles
 from ..ui.icon import Icon
@@ -23,6 +23,66 @@ from ..ui.icon import Icon
 
 class FamilyTreeScreen(Screens):
     # Page numbers for siblings and offspring
+
+    @staticmethod
+    def _relation_button(relative_rect, text, *, object_id, manager, container):
+        """Keep English artwork; draw localized labels separately from connecting lines."""
+        if i18n.config.get("locale") != "zh":
+            return UIImageButton(
+                relative_rect,
+                text,
+                object_id=object_id,
+                manager=manager,
+                container=container,
+            )
+        key = {
+            "siblings": "siblings",
+            "siblingmates": "siblings_mates",
+            "siblingkits": "siblings_kits",
+            "parents": "parents",
+            "parentsiblings": "parents_siblings",
+            "cousins": "cousins",
+            "grandparents": "grandparents",
+            "mates": "mates",
+            "kits": "kits",
+            "kitsmates": "kits_mates",
+            "grandkits": "grandkits",
+        }[object_id.removeprefix("#").removesuffix("_button")]
+        width = round(relative_rect.width / screen_scale)
+        height = round(relative_rect.height / screen_scale)
+        if key in ("siblings", "siblings_mates", "parents_siblings"):
+            label = pygame.Rect(74, 0, width - 74, 30)
+            ends = ((0, 15), (74, 15))
+        elif key in ("mates", "kits_mates"):
+            label = pygame.Rect(0, 0, width - 58, 30)
+            ends = ((width - 58, 15), (width, 15))
+        elif key in ("parents", "grandparents"):
+            label = pygame.Rect(0, 0, width, 30)
+            ends = ((width // 2, 30), (width // 2, height))
+        else:
+            label = pygame.Rect(0, height - 30, width, 30)
+            ends = ((width // 2, 0), (width // 2, height - 30))
+
+        lines = pygame.Surface((width, height), pygame.SRCALPHA)
+        pygame.draw.line(lines, "#362f20", *ends, 5)
+        pygame.draw.line(lines, "#8a7654", *ends, 2)
+        connector = pygame_gui.elements.UIImage(
+            relative_rect,
+            pygame.transform.scale(lines, relative_rect.size),
+            manager=manager,
+            container=container,
+        )
+        connector.disable()
+        button_rect = ui_scale(label)
+        button_rect.move_ip(relative_rect.topleft)
+        return UISurfaceImageButton(
+            button_rect,
+            f"screens.family_tree.{key}",
+            get_button_dict(ButtonStyles.SQUOVAL, label.size),
+            object_id="@buttonstyles_squoval",
+            manager=manager,
+            container=container,
+        )
 
     def __init__(self, name=None):
         super().__init__(name)
@@ -256,7 +316,10 @@ class FamilyTreeScreen(Screens):
             switch_get_value(Switch.root_cat).sprite,
             cat_id=switch_get_value(Switch.root_cat).ID,
             manager=MANAGER,
-            tool_tip_text=f"Started viewing tree at {switch_get_value(Switch.root_cat).name}",
+            tool_tip_text=i18n.t(
+                "screens.family_tree.root_tooltip",
+                name=str(switch_get_value(Switch.root_cat).name),
+            ),
         )
 
         self.root_cat_frame.disable()
@@ -440,7 +503,7 @@ class FamilyTreeScreen(Screens):
         )
 
         if self.parents:
-            self.siblings_button = UIImageButton(
+            self.siblings_button = self._relation_button(
                 ui_scale(pygame.Rect((76 + x_pos, 32 + y_pos), (158, 30))),
                 "",
                 object_id="#siblings_button",
@@ -449,7 +512,7 @@ class FamilyTreeScreen(Screens):
             )
             if self.siblings:
                 if self.siblings_mates or self.siblings_kits:
-                    self.sibling_mates_button = UIImageButton(
+                    self.sibling_mates_button = self._relation_button(
                         ui_scale(pygame.Rect((232 + x_pos, 32 + y_pos), (209, 30))),
                         "",
                         object_id="#siblingmates_button",
@@ -457,14 +520,14 @@ class FamilyTreeScreen(Screens):
                         container=self.family_tree,
                     )
                 if self.siblings_kits:
-                    self.sibling_kits_button = UIImageButton(
+                    self.sibling_kits_button = self._relation_button(
                         ui_scale(pygame.Rect((203 + x_pos, 48 + y_pos), (126, 82))),
                         "",
                         object_id="#siblingkits_button",
                         manager=MANAGER,
                         container=self.family_tree,
                     )
-            self.parents_button = UIImageButton(
+            self.parents_button = self._relation_button(
                 ui_scale(pygame.Rect((68 + x_pos, -98 + y_pos), (88, 144))),
                 "",
                 object_id="#parents_button",
@@ -473,7 +536,7 @@ class FamilyTreeScreen(Screens):
             )
             self.family_tree.add_element(self.parents_button)
             if self.parents_siblings:
-                self.parents_siblings_button = UIImageButton(
+                self.parents_siblings_button = self._relation_button(
                     ui_scale(pygame.Rect((154 + x_pos, -98 + y_pos), (217, 30))),
                     "",
                     object_id="#parentsiblings_button",
@@ -481,7 +544,7 @@ class FamilyTreeScreen(Screens):
                     container=self.family_tree,
                 )
                 if self.cousins:
-                    self.cousins_button = UIImageButton(
+                    self.cousins_button = self._relation_button(
                         ui_scale(pygame.Rect((252 + x_pos, -69 + y_pos), (85, 82))),
                         "",
                         object_id="#cousins_button",
@@ -489,7 +552,7 @@ class FamilyTreeScreen(Screens):
                         container=self.family_tree,
                     )
             if self.grandparents:
-                self.grandparents_button = UIImageButton(
+                self.grandparents_button = self._relation_button(
                     ui_scale(pygame.Rect((47 + x_pos, -177 + y_pos), (130, 82))),
                     "",
                     object_id="#grandparents_button",
@@ -498,7 +561,7 @@ class FamilyTreeScreen(Screens):
                 )
 
         if self.mates or self.kits:
-            self.mates_button = UIImageButton(
+            self.mates_button = self._relation_button(
                 ui_scale(pygame.Rect((-138 + x_pos, 32 + y_pos), (144, 30))),
                 "",
                 object_id="#mates_button",
@@ -506,7 +569,7 @@ class FamilyTreeScreen(Screens):
                 container=self.family_tree,
             )
         if self.kits:
-            self.kits_button = UIImageButton(
+            self.kits_button = self._relation_button(
                 ui_scale(pygame.Rect((-59 + x_pos, 48 + y_pos), (58, 82))),
                 "",
                 object_id="#kits_button",
@@ -514,7 +577,7 @@ class FamilyTreeScreen(Screens):
                 container=self.family_tree,
             )
             if self.kits_mates or self.grandkits:
-                self.kits_mates_button = UIImageButton(
+                self.kits_mates_button = self._relation_button(
                     ui_scale(pygame.Rect((-238 + x_pos, 99 + y_pos), (182, 30))),
                     "",
                     object_id="#kitsmates_button",
@@ -522,7 +585,7 @@ class FamilyTreeScreen(Screens):
                     container=self.family_tree,
                 )
             if self.grandkits:
-                self.grandkits_button = UIImageButton(
+                self.grandkits_button = self._relation_button(
                     ui_scale(pygame.Rect((-141 + x_pos, 116 + y_pos), (101, 82))),
                     "",
                     object_id="#grandkits_button",

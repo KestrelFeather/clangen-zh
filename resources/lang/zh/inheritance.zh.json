@@ -1,0 +1,15 @@
+{
+    "zh": {
+        "current_mate": "现任伴侣",
+        "prev_mate": "前任伴侣",
+        "parent_of_inter": "%{name}的父母",
+        "second_parent": "另一位亲生父母：%{name}",
+        "blood_parent": {
+            "one": "亲生父母：%{name}",
+            "many": "亲生父母：%{name}"
+        },
+        "mate_of_inter": "%{name}的伴侣",
+        "littermates": "同窝手足",
+        "child_of_inter": "%{name}的子女"
+    }
+}

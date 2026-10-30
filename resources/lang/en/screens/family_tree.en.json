@@ -13,6 +13,7 @@
         "mates": "mates",
         "kits": "kits",
         "kits_mates": "kits' mates",
-        "grandkits": "grandkits"
+        "grandkits": "grandkits",
+        "root_tooltip": "Started viewing tree at %{name}"
     }
 }

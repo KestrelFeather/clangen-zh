@@ -1,0 +1,17 @@
+{
+    "zh": {
+        "heading": "为%{name}选择伴侣",
+        "info": "有伴侣的猫会忠于伴侣，只与伴侣生育幼崽（除非开启了婚外情）。下方列出了可选的伴侣。两只猫之间的连线可以提示它们是否合得来，已有的爱慕之情则以小爱心表示。",
+        "potential": "可选伴侣",
+        "current": "现有伴侣",
+        "offspring": "子女",
+        "with_selected_cat": "与选中猫的子女",
+        "no_mates": "没有伴侣",
+        "can_have_kits": "能够生育幼崽",
+        "no_kits_pair": "m_c与r_c没有共同的子女。",
+        "no_kits_single": "m_c没有子女。",
+        "no_kit_warning": "这对伴侣无法共同生育幼崽。",
+        "set_mate": "结为伴侣",
+        "unset_mate": "解除伴侣"
+    }
+}

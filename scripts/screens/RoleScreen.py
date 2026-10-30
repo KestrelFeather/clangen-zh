@@ -245,7 +245,7 @@ class RoleScreen(Screens):
             i18n.t(f"cat.personality.{self.the_cat.personality.trait}"),
             i18n.t("general.moons_age", count=self.the_cat.moons)
             + "  |  "
-            + self.the_cat.genderalign,
+            + self.the_cat.get_genderalign_string(),
         ]
 
         if self.the_cat.mentor:

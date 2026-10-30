@@ -1,0 +1,28 @@
+{
+    "zh": {
+        "heading": "为m_c选择新导师",
+        "info": "如果学徒刚满 6 个月就更换导师，原导师的资料中不会把它列为曾经教导的学徒。没有导师的学徒会在下个月自动获得一位导师。导师可能影响学徒日后的性格与技能。\n请慎重选择导师。",
+        "current_mentor": {
+            "zero": "m_c目前没有导师",
+            "one": "m_c目前的导师是r_c"
+        },
+        "set_mentor": "确认导师",
+        "unset_mentor": "移除导师",
+        "current_mentor_warning": "已选中现任导师",
+        "no_mentor_warning": "<font color=#FF0000>尚未选择导师</font>",
+        "no_current_apprentices": "目前无学徒",
+        "no_current_apprentices_tooltip": "只显示目前没有学徒的导师",
+        "no_former_apprentices": "从未带过学徒",
+        "no_former_apprentices_tooltip": "只显示从未教导过学徒的导师",
+        "former_apps": {
+            "zero": "",
+            "one": "\n曾带过 %{count} 名学徒",
+            "many": "\n曾带过 %{count} 名学徒"
+        },
+        "current_apps": {
+            "zero": "",
+            "one": "\n现有 %{count} 名学徒",
+            "many": "\n现有 %{count} 名学徒"
+        }
+    }
+}

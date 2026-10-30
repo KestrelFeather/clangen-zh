@@ -1,0 +1,23 @@
+{
+    "zh": {
+        "allow_romantic": "影响爱慕",
+        "allow_romantic_tooltip": "条件允许时，也影响爱慕程度。",
+        "mediate": "调解",
+        "sabotage": "挑拨",
+        "cat_feelings": "~~%{name}的感受~~",
+        "cant_work": "这位调解者本月无法履行职责。",
+        "already_worked": "这位调解者本月已经工作过了。",
+        "pair_already_mediated": "这两只猫本月已经接受过调解。",
+        "sabotage_failed": "挑拨失败！",
+        "mediate_failed": "调解失败！",
+        "romance": "爱慕",
+        "like": "好感",
+        "respect": "敬意",
+        "comfort": "安心感",
+        "trust": "信任",
+        "output_increase": "%{trait}增加了。",
+        "output_decrease": "%{trait}降低了。",
+        "output_sabotage_failed": "挑拨失败！\n",
+        "output_mediate_failed": "调解失败！\n"
+    }
+}

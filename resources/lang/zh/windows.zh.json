@@ -12,6 +12,16 @@
         "delete_yes": "确认删除",
         "delete_no": "返回",
         "symbol_filters": "族徽筛选",
-        "symbol_filter_title": "显示包含以下元素的族徽："
+        "symbol_filter_title": "显示包含以下元素的族徽：",
+        "no_relation_logs": "暂无关系记录。",
+        "other_perspective": "<u><b>另一方的视角</b></u>",
+        "prevent_kits": "禁止生育或收养",
+        "prevent_kits_tooltip": "阻止这只猫生育或收养幼崽。",
+        "prevent_retirement": "禁止自动退休",
+        "prevent_retirement_tooltip_yes": "允许这只猫自动退休。",
+        "prevent_retirement_tooltip_no": "阻止这只猫自动退休。",
+        "prevent_romance": "限制恋爱互动与伴侣变动",
+        "prevent_romance_tooltip": "阻止这只猫自动结为伴侣、分手，或与伴侣以外的猫进行恋爱互动。",
+        "no_mediators": "族群中没有调解者！"
     }
 }

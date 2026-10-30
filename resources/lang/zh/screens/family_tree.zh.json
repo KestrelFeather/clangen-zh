@@ -1,0 +1,19 @@
+{
+    "zh": {
+        "heading": "%{name}的家谱",
+        "lineage": "正在查看%{name}的亲族",
+        "no_cats": "无",
+        "parents": "父母",
+        "siblings": "兄弟姐妹",
+        "siblings_mates": "兄弟姐妹的伴侣",
+        "siblings_kits": "兄弟姐妹的子女",
+        "parents_siblings": "父母的兄弟姐妹",
+        "cousins": "堂表亲",
+        "grandparents": "祖辈",
+        "mates": "伴侣",
+        "kits": "子女",
+        "kits_mates": "子女的伴侣",
+        "grandkits": "孙辈",
+        "root_tooltip": "从%{name}开始查看家谱"
+    }
+}
