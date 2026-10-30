@@ -1,0 +1,16 @@
+{
+    "zh": {
+        "help_tooltip": "在这里安排武士的工作重点，为族群带来相应的好处，也可能带来不利影响。经典模式下无法选择部分重点。点击各项可查看具体说明。涉及其他族群的重点还可以指定目标族群。每隔 3 个月才能更改一次，请谨慎选择。",
+        "change_focus": "更改工作重点",
+        "current_focus": "<b>当前重点：</b>%{name}%{desc}",
+        "focus_last_changed": "<b>上次更改：</b>%{last_changed}<br>%{next_change}",
+        "next_change": {
+            "zero": "（现在可以更改）",
+            "one": "（%{moons}后可更改）",
+            "many": "（%{moons}后可更改）"
+        },
+        "involved_clans": "<br><b>相关族群：</b>%{clans}",
+        "what_to_focus": "武士们应该把精力放在哪里？",
+        "selected_info": "<b>所选重点说明：</b>\n%{info}"
+    }
+}

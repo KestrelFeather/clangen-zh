@@ -111,6 +111,8 @@
         "no_mediators": "The Clan has no mediators!",
         "leave_clan": "What should this cat become?",
         "pos_clan_rel_log": "The Clan gained %{value_list} towards %{name_list}.",
-        "neg_clan_rel_log": "The Clan lost %{value_list} towards %{name_list}."
+        "neg_clan_rel_log": "The Clan lost %{value_list} towards %{name_list}.",
+        "herb_management": "Herb Management",
+        "freshkill_management": "Freshkill Management"
     }
 }

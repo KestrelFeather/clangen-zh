@@ -68,7 +68,9 @@ def test_key_and_file_fallback_and_plural_counts():
     assert i18n.t("buttons.new_clan") == "创建族群"
     assert i18n.t("general.moons_age", count=1) == "1 个月"
     assert i18n.t("general.moons_age", count=7) == "7 个月"
-    assert i18n.t("settings.fading") == i18n.t("settings.fading", locale="en")
+    assert i18n.t("windows.create_pronouns_desc") == i18n.t(
+        "windows.create_pronouns_desc", locale="en"
+    )
     from scripts.game_structure.localization import load_lang_resource
 
     assert load_lang_resource("events/death/general.json") == json.loads(

@@ -76,7 +76,13 @@ def switch_clan_setting(setting_name):
 def reset_loaded_clan_settings():
     global clan_settings
 
-    clan_settings = {}
+    # Pending leader-den decisions are saved alongside settings. They must be
+    # registered here, or load_clan_settings discards them as unknown keys.
+    clan_settings = {
+        "lead_den_interaction": False,
+        "lead_den_clan_event": {},
+        "lead_den_outsider_event": {},
+    }
 
     for _setting in all_settings:  # Add all the settings to the settings dictionary
         for setting_name, value in _setting.items():

@@ -495,7 +495,7 @@ def event_text_adjust(
             "o_c_n",
             other_clan
             if isinstance(other_clan, str)
-            else str(other_clan.name) + "Clan",
+            else i18n.t("general.clan", name=other_clan.name),
         )
 
     # clan_name

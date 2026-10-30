@@ -45,3 +45,5 @@
 名字前后缀的独立核对与待填规则见 [NAME-AFFIXES.zh-CN.md](NAME-AFFIXES.zh-CN.md)。资料与健康这一批的草药、疾病、饰品及暂译清单见 [PROFILE-HEALTH.zh-CN.md](PROFILE-HEALTH.zh-CN.md)；其中 kittencough 采用“幼崽感冒”，carrionplace disease 采用“垃圾场瘟疫”。以上为后续源码进度，开头的 alpha.2 范围说明仍是当时修订记录。
 
 2026-10-30 的管理界面增补见 [MANAGEMENT.zh-CN.md](MANAGEMENT.zh-CN.md)。关系数值统一使用“好感、敬意、安心感、信任、爱慕”，这些是游戏界面译法；职位仍使用“导师、调解者、巫医”等已核对称谓。
+
+同日族群管理增补见 [CLAN-ADMIN.zh-CN.md](CLAN-ADMIN.zh-CN.md)。Gathering 按[族群术语](https://warriors.huijiwiki.com/wiki/族群术语)使用“森林大会”；Focus“工作重点”、fading“淡去”、feeding tactics“喂食策略”为本 fork 的游戏界面译法。其他族群的名称本体暂保留原始文本，只本地化“族”后缀。

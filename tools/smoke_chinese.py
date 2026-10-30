@@ -195,6 +195,11 @@ def check_game(namespace):
         from tools.smoke_management import check_management
 
         check_management(change, render, namespace["load_game"])
+    clan_admin = os.environ.get("CLANGEN_ZH_TEST_CLAN_ADMIN") == "1"
+    if clan_admin:
+        from tools.smoke_clan_admin import check_clan_admin
+
+        check_clan_admin(change, render, namespace["load_game"])
     game.clan.game_mode = saved_mode
     result = {
         "clan": str(game.clan.name),
@@ -206,6 +211,7 @@ def check_game(namespace):
         "save_reload": True,
         "profile_health": True,
         "management": management,
+        "clan_admin": clan_admin,
         "data_dir": str(data_dir),
     }
     (output / "smoke-result.json").write_text(

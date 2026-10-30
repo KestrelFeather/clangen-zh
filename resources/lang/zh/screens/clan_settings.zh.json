@@ -1,0 +1,14 @@
+{
+    "zh": {
+        "full_settings": "打开游戏设置",
+        "full_settings_info": "调整游戏整体设置和音效",
+        "general": "常规设置",
+        "general_info": "调整当前族群的常规设置",
+        "relation": "关系设置",
+        "relation_info": "调整当前族群的猫际关系设置",
+        "role": "职责设置",
+        "role_info": "调整当前族群的职责设置",
+        "stats": "族群统计",
+        "stats_text": "在世族猫：%{living}\n星族成员：%{starclan}\n黑森林成员：%{darkforest}\n归宿不明的猫：%{unknownresidence}\n巫医：%{medcats}\n巫医学徒：%{medcatapps}\n武士：%{warriors}\n武士学徒：%{apps}\n调解者：%{mediators}\n调解者学徒：%{mediatorapps}\n长老：%{elders}\n幼崽和新生幼崽：%{kits}\n已淡去的亡猫：%{faded}"
+    }
+}

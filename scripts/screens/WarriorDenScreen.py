@@ -309,7 +309,10 @@ class WarriorDenScreen(Screens):
             desc = i18n.t(
                 "screens.warrior_den.involved_clans",
                 clans=adjust_list_text(
-                    [f"{clan}clan" for clan in game.clan.clans_in_focus]
+                    [
+                        i18n.t("general.clan", name=clan)
+                        for clan in game.clan.clans_in_focus
+                    ]
                 ),
             )
         last_change_text = ""

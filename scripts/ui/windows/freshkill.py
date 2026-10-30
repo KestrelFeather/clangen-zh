@@ -30,7 +30,7 @@ class FreshkillManagementWindow(GameWindow):
     def __init__(self):
         super().__init__(
             ui_scale(pygame.Rect((125, 150), (550, 420))),
-            window_display_title="Freshkill Management",
+            window_display_title=i18n.t("windows.freshkill_management"),
         )
         # this needs to be here to prevent a crash
         # don't ask me WHY it crashes, i couldn't figure it out. i think it's a pygui issue.
@@ -118,7 +118,8 @@ class FreshkillManagementWindow(GameWindow):
                     start_int = amount.numerator - amount.denominator
                     amount = f"{start_int} & {start_int}/{amount.denominator}"
 
-            help_output += f"<br><b>{rank}:</b> {i18n.t('windows.prey_count', count=count, amount=amount)}"
+            rank_text = i18n.t(f"general.{rank}", count=1)
+            help_output += f"<br><b>{rank_text}:</b> {i18n.t('windows.prey_count', count=count, amount=amount)}"
         return help_output
 
     def create_feed_view(self):
