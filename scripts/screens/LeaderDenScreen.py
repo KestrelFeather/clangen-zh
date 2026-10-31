@@ -123,11 +123,11 @@ class LeaderDenScreen(Screens):
         """
         super().screen_switches()
         # just making sure these are set up ahead of time
-        if get_clan_setting("lead_den_clan_interaction") is None:
+        if get_clan_setting("lead_den_interaction") is None:
             set_clan_setting("lead_den_interaction", False)
         if get_clan_setting("lead_den_clan_event") is None:
             set_clan_setting("lead_den_clan_event", {})
-        if get_clan_setting("lead_den_clan_event") is None:
+        if get_clan_setting("lead_den_outsider_event") is None:
             set_clan_setting("lead_den_outsider_event", {})
 
         # no menu header allowed
@@ -352,7 +352,9 @@ class LeaderDenScreen(Screens):
             current_setting = get_clan_setting("lead_den_clan_event")
             self.focus_clan = get_other_clan(current_setting["other_clan"])
             self.update_other_clan_focus()
-            self.update_clan_interaction_choice(current_setting["interaction_type"])
+            self.update_clan_interaction_choice(
+                current_setting["interaction_type"], update_event=False
+            )
         else:
             self.focus_clan = game.clan.all_other_clans[0]
             self.update_other_clan_focus()
@@ -593,7 +595,9 @@ class LeaderDenScreen(Screens):
             current_setting = get_clan_setting("lead_den_outsider_event")
             self.focus_cat = Cat.fetch_cat(current_setting["cat_ID"])
             self.update_outsider_focus()
-            self.update_outsider_interaction_choice(current_setting["interaction_type"])
+            self.update_outsider_interaction_choice(
+                current_setting["interaction_type"], update_event=False
+            )
 
         self.update_text(clan=False)
 
@@ -708,7 +712,7 @@ class LeaderDenScreen(Screens):
         )
         self.focus_frame_elements["positive_interaction"].show()
 
-    def update_clan_interaction_choice(self, object_id):
+    def update_clan_interaction_choice(self, object_id, *, update_event=True):
         """
         handles changing chosen clan interaction. updates notice text.
         :param object_id: the text in the button
@@ -724,7 +728,9 @@ class LeaderDenScreen(Screens):
             },
         )
 
-        self.handle_other_clan_interaction(interaction)
+        # Reopening the screen restores the notice without rerolling the outcome.
+        if update_event:
+            self.handle_other_clan_interaction(interaction)
 
     def handle_other_clan_interaction(self, interaction_type: str):
         set_clan_setting("lead_den_interaction", True)
@@ -1130,7 +1136,7 @@ class LeaderDenScreen(Screens):
 
             i += 1
 
-    def update_outsider_interaction_choice(self, action):
+    def update_outsider_interaction_choice(self, action, *, update_event=True):
         """
         handles changing chosen outsider interaction. updates notice text.
         :param action: the object ID of the interaction button
@@ -1146,7 +1152,8 @@ class LeaderDenScreen(Screens):
 
         # because our groups are "hunt", "search", "invite" and "drive"
         # we remove the descriptor ("hunt_down", "drive_off", "invite_in")
-        self.handle_outsider_interaction(action.split("_")[0])
+        if update_event:
+            self.handle_outsider_interaction(action.split("_")[0])
 
     def handle_outsider_interaction(self, action):
         """

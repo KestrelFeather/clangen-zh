@@ -65,6 +65,8 @@
 
 ## M3：首个公开试玩版本
 
+2026-10-31：alpha.4 汇总已完成的名字、资料健康、管理和族群管理源码更新；Windows 包通过 133 项测试、归档资源比对、中文路径冷启动、历史测试存档读取和新版保存读档验证，详见 `VALIDATION.zh-CN.md` 与 `RELEASE-alpha4.zh-CN.md`。
+
 首版采用本地独立构建后上传 GitHub pre-release，提供 ZIP、SHA-256 和试玩说明。继承的 Actions 仍关闭；独立自动构建 CI 与自动更新是后续任务。
 
 

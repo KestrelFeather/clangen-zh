@@ -128,3 +128,32 @@ def test_med_den_narrative_structure_tokens_and_font(locale):
     check(en, zh)
     locale.set_locale("en")
     assert load_lang_resource("screens/med_den_messages.json") == en
+
+
+@pytest.mark.parametrize("outsider", [False, True])
+def test_restoring_leader_notice_does_not_reroll_action(monkeypatch, outsider):
+    from unittest.mock import Mock
+    from scripts.game_structure import game
+    from scripts.screens.LeaderDenScreen import LeaderDenScreen
+
+    monkeypatch.setattr(game, "clan", SimpleNamespace(leader=object()))
+    notice = Mock()
+    handler = Mock()
+    screen = SimpleNamespace(
+        screen_elements={"clan_notice_text": notice, "outsider_notice_text": notice},
+        focus_clan=object(),
+        focus_cat=object(),
+        handle_other_clan_interaction=handler,
+        handle_outsider_interaction=handler,
+    )
+    method = (
+        LeaderDenScreen.update_outsider_interaction_choice
+        if outsider
+        else LeaderDenScreen.update_clan_interaction_choice
+    )
+    action = "invite" if outsider else "befriend"
+    method(screen, action, update_event=False)
+    notice.set_text.assert_called_once()
+    handler.assert_not_called()
+    method(screen, action)
+    handler.assert_called_once_with(action)

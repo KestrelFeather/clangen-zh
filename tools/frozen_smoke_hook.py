@@ -36,6 +36,8 @@ if os.environ.get("CLANGEN_ZH_SMOKE_OUTPUT"):
 
         target = Path(os.environ["CLANGEN_ZH_SMOKE_OUTPUT"])
         target.mkdir(parents=True, exist_ok=True)
+        # Restore before exercising screens/reloading to avoid re-entering this hook.
+        pygame.display.update = _original_update
         pygame.image.save(
             pygame.display.get_surface(), str(target / "frozen-start.png")
         )
@@ -52,6 +54,98 @@ if os.environ.get("CLANGEN_ZH_SMOKE_OUTPUT"):
             "clan_age": game.clan.age if game.clan else None,
             "cat_count": len(game.clan.clan_cats) if game.clan else 0,
         }
+        if os.environ.get("CLANGEN_ZH_SMOKE_EXTENDED") == "1":
+            from scripts.cat.cats import Cat
+            from scripts.clan_package.settings import get_clan_setting
+            from scripts.game_structure.screen_settings import MANAGER, screen
+            from scripts.screens.enums import GameScreen
+            from scripts.ui.windows.herbs import HerbManagementWindow
+            from scripts.ui.windows.freshkill import FreshkillManagementWindow
+
+            assert (
+                game.clan is not None
+            ), "Extended probe requires an isolated fixture save"
+
+            def snapshot():
+                return json.loads(
+                    json.dumps(
+                        {
+                            "name": game.clan.name,
+                            "age": game.clan.age,
+                            "cats": {
+                                cat.ID: [
+                                    cat.name.prefix,
+                                    cat.name.suffix,
+                                    cat.status.rank,
+                                    cat.mentor,
+                                    cat.mate,
+                                    cat.adoptive_parents,
+                                ]
+                                for cat in Cat.all_cats.values()
+                            },
+                            "focus": game.clan.clans_in_focus,
+                            "last_focus_change": game.clan.last_focus_change,
+                            "diplomacy": get_clan_setting("lead_den_clan_event"),
+                            "interaction_chosen": get_clan_setting(
+                                "lead_den_interaction"
+                            ),
+                            "feeding_order": get_clan_setting("hungriest_first"),
+                        }
+                    )
+                )
+
+            expected = snapshot()
+
+            def change(screen_name):
+                old = game.all_screens[game.current_screen]
+                old.change_screen(screen_name)
+                game.update_game()
+                old.exit_screen()
+                current = frame.f_globals["all_screens"].get_screen(screen_name)
+                current.screen_switches()
+                game.switch_screens = False
+                return current
+
+            def capture(name):
+                for _ in range(10):
+                    game.all_screens[game.current_screen].on_use()
+                    MANAGER.update(1 / 30)
+                    MANAGER.draw_ui(screen)
+                pygame.image.save(screen, str(target / f"{name}.png"))
+
+            assert i18n.t("settings.raid_other_clans") == "掠夺其他族群"
+            assert i18n.t("screens.leader_den.clans") == "族群"
+            change(GameScreen.CLAN_SETTINGS)
+            capture("frozen-clan-settings")
+            change(GameScreen.WARRIOR_DEN)
+            capture("frozen-warrior-den")
+            change(GameScreen.LEADER_DEN)
+            capture("frozen-leader-den")
+            assert snapshot() == expected, "Opening leader den changed a pending action"
+            change(GameScreen.CAMP)
+            herbs = HerbManagementWindow()
+            capture("frozen-herbs")
+            herbs.kill()
+            food = FreshkillManagementWindow()
+            food.close_views()
+            food.create_tactic_view()
+            capture("frozen-feeding")
+            food.kill()
+            events = change(GameScreen.EVENTS)
+            events.save_button.save_game(events)
+            change(GameScreen.START)
+            frame.f_globals["load_game"]()
+            assert snapshot() == expected, "Frozen save/reload changed fixture state"
+            change(GameScreen.WARRIOR_DEN)
+            capture("frozen-reloaded")
+            result["extended_save_reload"] = True
+            result["checked_screens"] = [
+                "clan_settings",
+                "warrior_den",
+                "leader_den",
+                "herbs",
+                "feeding",
+            ]
         result["passed"] = (
             result["frozen"]
             and result["locale"] == "zh"
