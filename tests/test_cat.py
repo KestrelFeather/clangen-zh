@@ -437,6 +437,12 @@ class TestUpdateMentor(unittest.TestCase):
 
 
 class TestNameRepr(unittest.TestCase):
+    def setUp(self):
+        import i18n
+        previous_locale = i18n.config.get("locale")
+        self.addCleanup(i18n.set, "locale", previous_locale)
+        i18n.set("locale", "en")
+
     @classmethod
     def setUpClass(cls):
         os.environ["SDL_VIDEODRIVER"] = "dummy"

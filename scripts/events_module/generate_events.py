@@ -15,10 +15,6 @@ from scripts.game_structure import game
 from scripts.game_structure.localization import load_lang_resource
 
 
-def get_resource_directory(fallback=False):
-    return f"resources/lang/{i18n.config.get('locale') if not fallback else i18n.config.get('fallback')}/events/"
-
-
 # ---------------------------------------------------------------------------- #
 #                Tagging Guidelines can be found at the bottom                 #
 # ---------------------------------------------------------------------------- #
@@ -34,14 +30,8 @@ class GenerateEvents:
 
     @staticmethod
     def get_ongoing_event_dicts(file_path):
-        events = None
-        try:
-            with open(file_path, "r", encoding="utf-8") as read_file:
-                events = ujson.loads(read_file.read())
-        except:
-            print(f"ERROR: Unable to load events from biome {file_path}.")
-
-        return events
+        """Load a path relative to the locale's events directory, with fallback."""
+        return load_lang_resource(f"events/{file_path}")
 
     @staticmethod
     def get_death_reaction_dicts(family_relation, rel_value):
@@ -51,17 +41,9 @@ class GenerateEvents:
 
     @staticmethod
     def get_lead_den_event_dicts(event_type: str, success: bool):
-        try:
-            file_path = f"{get_resource_directory()}leader_den/{'success' if success else 'fail'}/{event_type}.json"
-            with open(file_path, "r", encoding="utf-8") as read_file:
-                events = ujson.loads(read_file.read())
-        except:
-            events = None
-            print(
-                f"ERROR: Unable to load lead den events for {event_type} {'success' if success else 'fail'}."
-            )
-
-        return events
+        return load_lang_resource(
+            f"events/leader_den/{'success' if success else 'fail'}/{event_type}.json"
+        )
 
     @staticmethod
     def clear_loaded_events():
@@ -69,10 +51,11 @@ class GenerateEvents:
 
     @staticmethod
     def generate_ongoing_events(event_type, biome, specific_event=None):
-        file_path = f"{get_resource_directory()}/{event_type}/{biome}.json"
+        file_path = f"{event_type}/{biome}.json"
+        cache_key = (i18n.config.get("locale"), i18n.config.get("fallback"), file_path)
 
-        if file_path in GenerateEvents.loaded_events:
-            return GenerateEvents.loaded_events[file_path]
+        if cache_key in GenerateEvents.loaded_events:
+            return GenerateEvents.loaded_events[cache_key]
         else:
             events_dict = GenerateEvents.get_ongoing_event_dicts(file_path)
 

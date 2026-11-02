@@ -146,6 +146,41 @@ if os.environ.get("CLANGEN_ZH_SMOKE_OUTPUT"):
                 "herbs",
                 "feeding",
             ]
+            moons = int(os.environ.get("CLANGEN_ZH_SMOKE_MOONS", "0"))
+            if moons:
+                import random
+                from scripts import events as month_events
+                from scripts.events_module.generate_events import GenerateEvents
+                from scripts.events_module.short.short_event_generation import (
+                    get_event_dicts,
+                )
+
+                random.seed(42)
+                assert get_event_dicts("injury/forest.json")
+                assert GenerateEvents.generate_ongoing_events("disasters", "forest")
+                for kind in ("other_clan", "outsider"):
+                    for success in (True, False):
+                        assert GenerateEvents.get_lead_den_event_dicts(kind, success)
+                assert get_clan_setting(
+                    "lead_den_clan_event"
+                ), "Fixture must include pending diplomacy"
+                month_events.handle_lead_den_event()
+                assert not get_clan_setting("lead_den_clan_event")
+                starting_age = game.clan.age
+                for _ in range(moons):
+                    month_events.one_moon()
+                assert game.clan.age == starting_age + moons
+                events_screen = change(GameScreen.EVENTS)
+                capture("frozen-month-events")
+                events_screen.save_button.save_game(events_screen)
+                expected_after_moons = snapshot()
+                change(GameScreen.START)
+                frame.f_globals["load_game"]()
+                assert snapshot() == expected_after_moons
+                result["months_advanced"] = moons
+                result["diplomacy_settled"] = True
+                result["event_resource_fallback"] = True
+                result["post_moon_save_reload"] = True
         result["passed"] = (
             result["frozen"]
             and result["locale"] == "zh"

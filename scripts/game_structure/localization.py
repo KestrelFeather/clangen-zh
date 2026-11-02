@@ -25,6 +25,8 @@ def load_lang_resource(location: str, *, root_directory=None):
     :param location: If the language code is required, substitute `{lang}`. Relative location
     from the resources/lang/[language]/ folder. Don't include a slash.
     :param root_directory: for testing only.
+    Missing or invalid locale JSON falls back to the configured fallback language.
+    Errors in the fallback resource are propagated rather than returning None.
     :return: Whatever resource was there, from either the locale or fallback
     :exception FileNotFoundError: If requested resource doesn't exist in selected locale or fallback
     """
@@ -42,7 +44,7 @@ def load_lang_resource(location: str, *, root_directory=None):
             encoding="utf-8",
         ) as string_file:
             return ujson.loads(string_file.read())
-    except FileNotFoundError:
+    except (FileNotFoundError, ValueError):
         with open(
             os.path.join(fallback_directory, location.replace("{lang}", fallback)),
             "r",

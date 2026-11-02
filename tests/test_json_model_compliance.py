@@ -64,7 +64,7 @@ def all_shortevent_files():
 )
 def test_thoughts(thought_file: Path):
     """Test that all thought JSONs are correct according to the Pydantic models"""
-    ThoughtSchema.model_validate_json(thought_file.read_text())
+    ThoughtSchema.model_validate_json(thought_file.read_text(encoding="utf-8"))
 
 
 @pytest.mark.parametrize(
@@ -74,7 +74,7 @@ def test_thoughts(thought_file: Path):
 )
 def test_patrols(patrol_file: Path):
     """Test that all patrol JSONs are correct according to the Pydantic models"""
-    PatrolSchema.model_validate_json(patrol_file.read_text())
+    PatrolSchema.model_validate_json(patrol_file.read_text(encoding="utf-8"))
 
 
 @pytest.mark.parametrize(
@@ -84,4 +84,4 @@ def test_patrols(patrol_file: Path):
 )
 def test_shortevents(shortevent_file: Path):
     """Test that all shortevent JSONs are correct according to the Pydantic models"""
-    ShortEventSchema.model_validate_json(shortevent_file.read_text())
+    ShortEventSchema.model_validate_json(shortevent_file.read_text(encoding="utf-8"))

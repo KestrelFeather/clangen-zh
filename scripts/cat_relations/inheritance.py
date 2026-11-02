@@ -487,6 +487,7 @@ class Inheritance:
         )
 
         siblings = False
+        littermate = False
         rel_type = RelationType.BLOOD
         additional_info = []
         if len(blood_parent_overlap) == 2:
@@ -496,6 +497,7 @@ class Inheritance:
                 == self.cat.moons + self.cat.dead_for
             ):
                 additional_info.append(i18n.t("inheritance.littermates"))
+                littermate = True
         elif (
             len(blood_parent_overlap) == 1
             and len(inter_parent_ids) == 1
@@ -507,6 +509,7 @@ class Inheritance:
                 == self.cat.moons + self.cat.dead_for
             ):
                 additional_info.append(i18n.t("inheritance.littermates"))
+                littermate = True
         elif len(blood_parent_overlap) == 1 and (
             len(inter_parent_ids) > 1 or len(current_parent_ids) > 1
         ):
@@ -521,7 +524,11 @@ class Inheritance:
             rel_type = RelationType.ADOPTIVE
 
         if siblings:
-            self.siblings[inter_id] = {"type": rel_type, "additional": additional_info}
+            self.siblings[inter_id] = {
+                "type": rel_type,
+                "additional": additional_info,
+                "littermate": littermate,
+            }
             self.all_involved.append(inter_id)
             self.all_but_cousins.append(inter_id)
 

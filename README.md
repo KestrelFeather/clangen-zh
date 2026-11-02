@@ -2,9 +2,9 @@
 
 这是 [KestrelFeather/clangen-zh](https://github.com/KestrelFeather/clangen-zh) 独立维护的简体中文本地化项目，基于 [ClanGenOfficial/clangen](https://github.com/ClanGenOfficial/clangen)。
 
-**当前 Windows x64 中文试玩版：`v0.13.4-zh.0.1.0-alpha.4`。这是部分汉化的 alpha，大量剧情事件、未确认的猫名和部分次要界面仍为英文。**
+**当前 Windows x64 中文试玩版：`v0.13.4-zh.0.1.0-alpha.5`。修复 alpha.4 中文模式推进月份崩溃及同窝手足判定问题。仍为部分汉化，大量剧情事件、未确认的猫名和部分次要界面仍为英文。**
 
-[下载中文试玩版](https://github.com/KestrelFeather/clangen-zh/releases/tag/v0.13.4-zh.0.1.0-alpha.4) · [试玩说明](localization/PREVIEW.zh-CN.md) · [术语依据](localization/TERMINOLOGY.zh-CN.md) · [验证记录](localization/VALIDATION.zh-CN.md)
+[下载中文试玩版](https://github.com/KestrelFeather/clangen-zh/releases/tag/v0.13.4-zh.0.1.0-alpha.5) · [试玩说明](localization/PREVIEW.zh-CN.md) · [术语依据](localization/TERMINOLOGY.zh-CN.md) · [验证记录](localization/VALIDATION.zh-CN.md)
 
 完整解压 Windows ZIP 后运行 `ClanGenChinese.exe`，无需安装 Python。请保留 `_internal` 文件夹。默认简体中文，可在设置中切换英文。存档与原版分开，初期通过手动下载更新。
 
