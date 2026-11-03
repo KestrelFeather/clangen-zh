@@ -16,13 +16,23 @@ from tests.test_chinese_profile_health import locale, ROOT
         if path.name != "_debug.json"
     ],
 )
-def test_short_events_fall_back_to_english(locale, path):
-    from scripts.events_module.short.short_event_generation import get_event_dicts
+def test_short_events_fall_back_to_english(locale, path, tmp_path, monkeypatch):
+    from scripts.events_module.short import short_event_generation as generator
+    from scripts.game_structure.localization import load_lang_resource
 
     expected = json.loads(
         (ROOT / "resources/lang/en/events" / path).read_text(encoding="utf-8")
     )
-    assert get_event_dicts(path) == expected
+    # Force the missing-locale branch even after this resource is translated.
+    fallback = tmp_path / "en/events" / path
+    fallback.parent.mkdir(parents=True)
+    fallback.write_text(json.dumps(expected), encoding="utf-8")
+    monkeypatch.setattr(
+        generator,
+        "load_lang_resource",
+        lambda resource: load_lang_resource(resource, root_directory=tmp_path),
+    )
+    assert generator.get_event_dicts(path) == expected
 
 
 @pytest.mark.parametrize("success", [True, False])

@@ -1,7 +1,7 @@
 # ClanGen 中文版本维护计划
 
 本项目由 KestrelFeather 独立维护，基于 ClanGenOfficial/clangen，属于非官方中文版本。
-首阶段为简体中文、Windows x64、免费发布。当前界面试玩版为 `v0.13.4-zh.0.1.0-alpha.3`；覆盖范围、操作说明及已知限制见 [PREVIEW.zh-CN.md](PREVIEW.zh-CN.md)，验证证据见 [VALIDATION.zh-CN.md](VALIDATION.zh-CN.md)。
+首阶段为简体中文、Windows x64、免费发布。当前公开试玩版为 `v0.13.4-zh.0.1.0-alpha.5`；覆盖范围、操作说明及已知限制见 [PREVIEW.zh-CN.md](PREVIEW.zh-CN.md)，验证证据见 [VALIDATION.zh-CN.md](VALIDATION.zh-CN.md)。下文日期条目保留当时进度，名字、资料健康与管理三批更新已汇入 alpha.4，并由 alpha.5 延续。
 
 ## 基线和分支
 
@@ -50,6 +50,7 @@
 
 ## M2：译文规范与批量扩充
 
+- 2026-11-03：新增森林、海滩、山地、平原和湿地 43 条伤病事件，含历史与关系日志共 95 处显示文本。规则数据逐字段与上游比较，源码集成验证覆盖实际伤病及保存重读。此批尚未包含在 alpha.5 下载包，详见 [INJURY-EVENTS.zh-CN.md](INJURY-EVENTS.zh-CN.md)。下一批优先通用伤病，再补沙漠。
 - 建立术语表：原词、建议译名、上下文、采用的译名体系、审核状态。
 - 术语口径：按用户指定的灰机 Wiki 大陆简体用词，来源和判断见 `TERMINOLOGY.zh-CN.md`。
 - 2026-10-29 源码进度：已接入部分名字前后缀及晋升显示，未知名字回退英文，见 `NAME-AFFIXES.zh-CN.md`；新增资料与健康相关 789 个 i18n 字符串叶节点，范围、来源及验证见 `PROFILE-HEALTH.zh-CN.md`。这两批源码更新尚未包含在 alpha.3 下载包内。

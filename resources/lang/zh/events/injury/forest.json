@@ -1,0 +1,630 @@
+[
+    {
+        "event_id": "fst_injury_broken_anyapprentice1",
+        "location": [
+            "forest"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 2,
+        "event_text": "m_c练习爬树时从树枝上滑落，受了重伤，被带回了营地。",
+        "m_c": {
+            "status": [
+                "apprentice"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "blunt_force_injury"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c从树上摔下来，留下了伤疤。",
+                "death": "m_c从树上摔下来后，因伤势过重死去。"
+            }
+        ]
+    },
+    {
+        "event_id": "fst_injury_clawwound_anymultistatus1",
+        "location": [
+            "forest"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 1,
+        "event_text": "m_c在夜间巡逻时捕猎，险些被一只猫头鹰抓走，身上留下了严重的抓伤。",
+        "m_c": {
+            "status": [
+                "apprentice"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "claw-wound",
+                    "mangled leg",
+                    "mangled tail"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "一只猫头鹰试图抓走m_c，留下了伤疤。",
+                "death": "一只猫头鹰试图抓走m_c，m_c后来因伤势过重死去。"
+            }
+        ]
+    },
+    {
+        "event_id": "fst_injury_broken_anyapprentice2",
+        "location": [
+            "forest"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 2,
+        "event_text": "r_c激m_c去爬领地里最高的几棵树之一。结果m_c摔到了地上，r_c飞奔回营地求救。",
+        "m_c": {
+            "status": [
+                "apprentice",
+                "medicine cat apprentice",
+                "mediator apprentice"
+            ]
+        },
+        "r_c": {
+            "status": [
+                "apprentice",
+                "medicine cat apprentice",
+                "mediator apprentice"
+            ],
+            "trait": [
+                "adventurous",
+                "bold",
+                "daring",
+                "troublesome",
+                "fierce",
+                "bloodthirsty",
+                "childish",
+                "playful",
+                "insecure",
+                "ambitious",
+                "confident",
+                "arrogant",
+                "competitive"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "blunt_force_injury"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "death": "m_c从高树上摔下来，摔断了脊背，最终因伤势过重死去。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "m_c"
+                ],
+                "cats_to": [
+                    "r_c"
+                ],
+                "values": [
+                    "comfort",
+                    "trust"
+                ],
+                "amount": -10,
+                "mutual": false,
+                "log": {
+                    "cats_from": "cat_to激cat_from去爬树，结果cat_from摔了下来，受了重伤。"
+                }
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "respect"
+                ],
+                "amount": 10,
+                "mutual": false,
+                "log": {
+                    "cats_from": "cat_from激cat_to去爬树。虽然最后闹到了巫医巢穴，cat_from还是很佩服cat_to的勇气。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "fst_injury_tornpelt_any1",
+        "location": [
+            "forest"
+        ],
+        "season": [
+            "greenleaf"
+        ],
+        "frequency": 3,
+        "event_text": "m_c钻过茂密的灌木丛，被划得满身伤痕。",
+        "m_c": {
+            "age": [
+                "any",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "torn pelt",
+                    "scrapes",
+                    "small cut"
+                ],
+                "scars": [
+                    "QUILLSIDE",
+                    "SCRATCHSIDE"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "fst_injury_mangledtail_anyany1",
+        "location": [
+            "forest"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 1,
+        "event_text": "一根掉落的粗树枝砸伤了m_c的尾巴，伤势很重。",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "mangled tail"
+                ],
+                "scars": [
+                    "HALFTAIL",
+                    "MANTAIL",
+                    "NOTAIL",
+                    "TAILSCAR"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c被掉落的粗树枝砸伤，留下了伤疤。",
+                "death": "m_c被掉落的粗树枝砸中，因伤势过重死去。"
+            }
+        ]
+    },
+    {
+        "event_id": "fst_injury_burn_greenleafany1",
+        "location": [
+            "forest"
+        ],
+        "season": [
+            "greenleaf"
+        ],
+        "frequency": 1,
+        "event_text": "大火席卷森林。m_c虽然逃了出来，却还是被烧伤了。",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "burn",
+                    "severe burn"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c的皮毛在一场森林大火中被烧伤。",
+                "death": "m_c在一场森林大火中被烧伤，最终伤重不治。"
+            }
+        ]
+    },
+    {
+        "event_id": "fst_injury_burn_greenleafmultiage1",
+        "location": [
+            "forest"
+        ],
+        "season": [
+            "greenleaf"
+        ],
+        "frequency": 1,
+        "event_text": "绿叶季天气干燥，营地里起了火。m_c冲进育婴室救r_c，自己却被烧伤了。",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ],
+            "trait": [
+                "ambitious",
+                "bold",
+                "daring",
+                "fierce",
+                "righteous",
+                "strict",
+                "compassionate",
+                "confident",
+                "calm",
+                "loyal",
+                "loving",
+                "responsible",
+                "arrogant",
+                "competitive"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "kitten",
+                "newborn"
+            ],
+            "status": [
+                "kitten",
+                "newborn"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "severe burn"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c的皮毛在一场森林大火中被烧伤。",
+                "death": "m_c在一场森林大火中被烧伤，最终伤重不治。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "trust",
+                    "respect"
+                ],
+                "amount": 30,
+                "mutual": false,
+                "log": {
+                    "cats_from": "cat_to把cat_from从着火的育婴室里救了出来，自己的皮毛却被烧伤了。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "fst_injury_shivering_multiapprentice1",
+        "location": [
+            "forest"
+        ],
+        "season": [
+            "leaf-bare"
+        ],
+        "frequency": 2,
+        "event_text": "m_c和r_c在营地附近结冰的池塘上玩耍时，脚下的冰突然裂开了。m_c设法把r_c拖出了冰冷的水面。",
+        "m_c": {
+            "status": [
+                "apprentice",
+                "medicine cat apprentice",
+                "mediator apprentice"
+            ],
+            "relationship_status": [
+                "likes"
+            ],
+            "trait": [
+                "daring",
+                "adventurous",
+                "oblivious",
+                "bold",
+                "competitive",
+                "arrogant",
+                "confident",
+                "ambitious",
+                "playful"
+            ]
+        },
+        "r_c": {
+            "status": [
+                "apprentice",
+                "medicine cat apprentice",
+                "mediator apprentice"
+            ],
+            "skill": [
+                "-SWIMMER,1"
+            ],
+            "trait": [
+                "daring",
+                "adventurous",
+                "oblivious",
+                "bold",
+                "playful",
+                "childish",
+                "ambitious",
+                "confident",
+                "arrogant",
+                "competitive"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c",
+                    "r_c"
+                ],
+                "injuries": [
+                    "cold_injury"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c",
+                    "r_c"
+                ],
+                "scar": "m_c掉进结冰的池塘，被冻伤了。",
+                "death": "m_c掉进结冰的池塘后冻死了。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "trust",
+                    "respect"
+                ],
+                "amount": 30,
+                "mutual": false,
+                "log": {
+                    "cats_from": "cat_to把cat_from从结冰的池塘里救了出来，免于溺水。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "fst_injury_headache_anymultitraitmultistatus1",
+        "location": [
+            "forest"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "m_c追踪气味时撞上了树枝，回到营地时脑袋还疼得厉害。",
+        "m_c": {
+            "status": [
+                "apprentice",
+                "warrior",
+                "deputy",
+                "leader"
+            ],
+            "trait": [
+                "ambitious",
+                "childish",
+                "playful",
+                "bold",
+                "daring",
+                "confident",
+                "adventurous",
+                "competitive",
+                "oblivious"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "headache"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "fst_injury_tornpelt_any2",
+        "location": [
+            "forest"
+        ],
+        "season": [
+            "leaf-bare",
+            "leaf-fall"
+        ],
+        "frequency": 4,
+        "event_text": "m_c钻过茂密的荆棘丛，被划得满身伤痕。",
+        "m_c": {
+            "age": [
+                "any",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "torn pelt",
+                    "scrapes",
+                    "small cut"
+                ],
+                "scars": [
+                    "QUILLSIDE",
+                    "SCRATCHSIDE"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "fst_injury_fireflies",
+        "location": [
+            "forest:camp1"
+        ],
+        "season": [
+            "-leaf-bare"
+        ],
+        "sub_type": [],
+        "tags": [],
+        "frequency": 2,
+        "event_text": "m_c在营地里追逐萤火虫时受了伤。",
+        "new_accessory": [],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "minor_injury"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "fst_mushroom_injury",
+        "location": [
+            "forest:camp1"
+        ],
+        "season": [
+            "newleaf",
+            "greenleaf"
+        ],
+        "frequency": 1,
+        "event_text": "m_c发现了一朵奇特的天蓝色蘑菇。只咬一口应该没事吧……到了当晚，m_c就病倒了。",
+        "m_c": {
+            "age": [
+                "any"
+            ],
+            "skill": [
+                "-CLEVER,1",
+                "-SENSE,2",
+                "-HEALER,1"
+            ],
+            "trait": [
+                "-nervous",
+                "-strict",
+                "-thoughtful",
+                "-calm",
+                "-responsible",
+                "-wise",
+                "-cunning",
+                "-careful"
+            ],
+            "dies": false
+        },
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "death": "m_c吃了一朵美丽却致命的蘑菇，中毒而死。"
+            }
+        ],
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "poisoned"
+                ],
+                "scars": []
+            }
+        ]
+    }
+]

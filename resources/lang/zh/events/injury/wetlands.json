@@ -1,0 +1,131 @@
+[
+    {
+        "event_id": "wtlnd_injury_sore_anymultiage1",
+        "location": [
+            "wetlands"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "m_c穿过领地里一片格外泥泞、草木茂密的地方，睡醒后浑身酸痛。",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "sore"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "wtlnd_injury_poisoned_app1",
+        "location": [
+            "wetlands"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "m_c在领地里吃了些红色浆果，被r_c急忙送回了营地。",
+        "m_c": {
+            "age": [
+                "adolescent"
+            ],
+            "skill": [
+                "-HEALER,1"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "young adult",
+                "adult",
+                "senior adult"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "poisoned"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "wtlnd_injury_smallcut_anymultiage1",
+        "location": [
+            "wetlands"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "m_c被一棵带刺的树垂下的低枝划伤了。",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "small cut"
+                ],
+                "scars": [
+                    "QUILLSCRATCH",
+                    "QUILLSIDE",
+                    "SCRATCHSIDE"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "wtlnd_injury_snakebite_anymultiage1",
+        "location": [
+            "wetlands"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "m_c在沼泽里捕猎时，被一条藏在暗处的蛇咬了。",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "snake bite"
+                ]
+            }
+        ]
+    }
+]

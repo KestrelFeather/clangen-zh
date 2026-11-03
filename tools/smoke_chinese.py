@@ -200,6 +200,11 @@ def check_game(namespace):
         from tools.smoke_clan_admin import check_clan_admin
 
         check_clan_admin(change, render, namespace["load_game"])
+    injury_events = os.environ.get("CLANGEN_ZH_TEST_INJURY_EVENTS") == "1"
+    if injury_events:
+        from tools.smoke_injury_events import check_injury_events
+
+        check_injury_events(change, render, namespace["load_game"])
     game.clan.game_mode = saved_mode
     result = {
         "clan": str(game.clan.name),
@@ -212,6 +217,7 @@ def check_game(namespace):
         "profile_health": True,
         "management": management,
         "clan_admin": clan_admin,
+        "injury_events": injury_events,
         "data_dir": str(data_dir),
     }
     (output / "smoke-result.json").write_text(

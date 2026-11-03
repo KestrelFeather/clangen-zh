@@ -1,0 +1,983 @@
+[
+    {
+        "event_id": "bch_injury_waterinlungs_anyapp1",
+        "location": [
+            "beach"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 3,
+        "event_text": "学徒m_c独自外出练习，险些溺水，幸好r_c把m_c救了上来。",
+        "m_c": {
+            "status": [
+                "apprentice"
+            ],
+            "trait": [
+                "adventurous",
+                "ambitious",
+                "bold",
+                "childish",
+                "confident",
+                "daring",
+                "playful",
+                "troublesome"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "water in their lungs"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "death": "m_c溺水时肺里呛进了水，最终因此死去。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "m_c"
+                ],
+                "cats_to": [
+                    "r_c"
+                ],
+                "mutual": true,
+                "values": [
+                    "trust",
+                    "respect"
+                ],
+                "amount": 30,
+                "log": {
+                    "cats_from": "cat_to救起了险些溺水的cat_from。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_crackedpads_anyapprentice1",
+        "location": [
+            "beach"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "m_c在咸水中行走，脚垫变得干裂疼痛。",
+        "m_c": {
+            "status": [
+                "any"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "cracked pads"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_bruises_anymultitraitapprentice1",
+        "location": [
+            "beach:camp2"
+        ],
+        "season": [
+            "leaf-bare"
+        ],
+        "frequency": 4,
+        "event_text": "m_c在学徒岩周围飞奔时脚下一滑，掉进了涨潮时涌入洞穴的海水里。好在没什么大碍，只是有些淤伤，也有些难为情。",
+        "m_c": {
+            "status": [
+                "apprentice"
+            ],
+            "trait": [
+                "adventurous",
+                "bold",
+                "childish",
+                "daring",
+                "playful",
+                "troublesome"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "bruises"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_bruises_multimultitraitapprentice1",
+        "location": [
+            "beach:camp1"
+        ],
+        "season": [
+            "greenleaf",
+            "newleaf",
+            "leaf-fall"
+        ],
+        "frequency": 4,
+        "event_text": "m_c在营地空地的潮池里玩闹时脚下一滑，一头栽了进去。除了有些淤伤，伤得最重的大概就是自尊心了。",
+        "m_c": {
+            "age": [
+                "adolescent"
+            ],
+            "status": [
+                "apprentice"
+            ],
+            "trait": [
+                "adventurous",
+                "bold",
+                "childish",
+                "daring",
+                "playful",
+                "troublesome"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "bruises"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_shivering_multiapprentice1",
+        "location": [
+            "beach"
+        ],
+        "season": [
+            "leaf-fall",
+            "leaf-bare"
+        ],
+        "frequency": 3,
+        "event_text": "r_c一激，m_c就做了个不明智的决定：独自出去游泳。m_c虽然回来了，却浑身湿透，在冷风中抖个不停。",
+        "m_c": {
+            "status": [
+                "apprentice"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "any"
+            ],
+            "status": [
+                "any"
+            ],
+            "trait": [
+                "adventurous",
+                "bold",
+                "childish",
+                "daring",
+                "playful",
+                "troublesome"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "shivering"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "death": "m_c受r_c的激将，去冰冷的水里游泳，后来因此死去。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "mutual": false,
+                "values": [
+                    "respect"
+                ],
+                "amount": 15,
+                "log": {
+                    "cats_from": "cat_from激cat_to独自去冰冷的水里游泳，没想到cat_to真的去了。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_dehydrated_anyapprentice1",
+        "location": [
+            "beach"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 3,
+        "event_text": "r_c讲解海边的安全常识时，m_c很少认真听。这回巡逻时口渴，m_c竟喝了海水，回到营地时已经严重脱水。",
+        "m_c": {
+            "status": [
+                "apprentice"
+            ],
+            "relationship_status": [
+                "app/mentor"
+            ],
+            "trait": [
+                "troublesome",
+                "strange"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "any"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "dehydrated"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "death": "m_c喝了海水后，因脱水死去。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "respect"
+                ],
+                "amount": -10,
+                "log": {
+                    "cats_from": "cat_to没有听进cat_from关于海水的警告，结果脱水了。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_clawwound_anycamp1kit1",
+        "location": [
+            "beach:camp1_camp2"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 1,
+        "event_text": "一只海鸥抓住了m_c，幸好r_c及时救下了这只幼崽！不过，m_c还是在这场险情中受了伤。",
+        "m_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "claw-wound"
+                ],
+                "scars": [
+                    "BACK",
+                    "TWO"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c还是幼崽时，一只海鸥试图将m_c抓走，留下了伤疤。",
+                "death": "一只海鸥试图抓走m_c，m_c后来因伤势过重死去。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "m_c"
+                ],
+                "cats_to": [
+                    "r_c"
+                ],
+                "values": [
+                    "trust",
+                    "respect"
+                ],
+                "amount": 30,
+                "log": {
+                    "cats_from": "一只海鸥试图抓走cat_from，cat_to救下了cat_from的命。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_clawwound_anypelicankit1",
+        "location": [
+            "beach:camp1_camp2"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 1,
+        "event_text": "一只鹈鹕抓住了m_c，幸好r_c及时救下了这只幼崽！不过，m_c还是在这场险情中受了伤。",
+        "m_c": {
+            "status": [
+                "kitten"
+            ]
+        },
+        "r_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "claw-wound"
+                ],
+                "scars": [
+                    "BACK",
+                    "TWO"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c还是幼崽时，一只鹈鹕试图将m_c抓走，留下了伤疤。",
+                "death": "一只鹈鹕试图抓走m_c，m_c后来因伤势过重死去。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "m_c"
+                ],
+                "cats_to": [
+                    "r_c"
+                ],
+                "values": [
+                    "trust",
+                    "respect"
+                ],
+                "amount": 30,
+                "log": {
+                    "cats_from": "一只鹈鹕试图抓走cat_from，cat_to救下了cat_from的命。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_waterinlungs_multikit1",
+        "location": [
+            "beach:camp2"
+        ],
+        "season": [
+            "greenleaf",
+            "newleaf"
+        ],
+        "tags": [
+            "clan:warrior"
+        ],
+        "frequency": 2,
+        "event_text": "r_c激m_c试着游出营地，m_c哪肯认输。结果m_c险些溺水，幸好一名武士把m_c救了上来。",
+        "m_c": {
+            "status": [
+                "kitten"
+            ],
+            "trait": [
+                "daring",
+                "impulsive",
+                "attention-seeker"
+            ]
+        },
+        "r_c": {
+            "status": [
+                "kitten"
+            ],
+            "trait": [
+                "troublesome",
+                "bossy",
+                "bullying",
+                "daring",
+                "impulsive"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "water in their lungs"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "death": "m_c试图游出营地时肺里呛进了水，最终因此死去。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "respect"
+                ],
+                "amount": 15,
+                "log": {
+                    "cats_from": "cat_from激cat_to游出营地，没想到cat_to真的尝试了，让cat_from很佩服。"
+                }
+            },
+            {
+                "cats_from": [
+                    "m_c"
+                ],
+                "cats_to": [
+                    "r_c"
+                ],
+                "values": [
+                    "trust",
+                    "comfort"
+                ],
+                "amount": -15,
+                "log": {
+                    "cats_from": "cat_to激cat_from游出营地，结果cat_from险些溺水。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_shivering_multiapprentice2",
+        "location": [
+            "beach:camp2"
+        ],
+        "season": [
+            "leaf-fall",
+            "leaf-bare"
+        ],
+        "tags": [
+            "clan:warrior"
+        ],
+        "frequency": 2,
+        "event_text": "r_c激m_c试着游出营地，m_c哪肯认输。结果m_c险些淹死在冰冷的水里，被一名武士救上来后还在剧烈发抖。",
+        "m_c": {
+            "status": [
+                "kitten"
+            ],
+            "trait": [
+                "daring",
+                "impulsive",
+                "attention-seeker"
+            ]
+        },
+        "r_c": {
+            "status": [
+                "kitten"
+            ],
+            "trait": [
+                "troublesome",
+                "bossy",
+                "bullying",
+                "daring",
+                "impulsive"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "shivering"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "death": "m_c受r_c的激将，去冰冷的水里游泳，后来因此死去。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "respect"
+                ],
+                "amount": 15,
+                "log": {
+                    "cats_from": "cat_from激cat_to游出营地，没想到cat_to真的尝试了，让cat_from很佩服。"
+                }
+            },
+            {
+                "cats_from": [
+                    "m_c"
+                ],
+                "cats_to": [
+                    "r_c"
+                ],
+                "values": [
+                    "trust",
+                    "comfort"
+                ],
+                "amount": -15,
+                "log": {
+                    "cats_from": "cat_to激cat_from游出营地，结果cat_from险些溺水。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_bruises_kit1",
+        "location": [
+            "beach:camp1"
+        ],
+        "season": [
+            "greenleaf",
+            "newleaf",
+            "leaf-fall"
+        ],
+        "frequency": 4,
+        "event_text": "m_c在潮池间蹦跳时绊了一跤，摔在岩石上。幸好只受了点淤伤。",
+        "m_c": {
+            "status": [
+                "kitten"
+            ],
+            "trait": [
+                "impulsive"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "bruises"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_bruises_multicamp1multitraitkit1",
+        "location": [
+            "beach:camp1"
+        ],
+        "season": [
+            "leaf-fall",
+            "leaf-bare"
+        ],
+        "frequency": 4,
+        "event_text": "m_c在结冰的潮池上玩耍，滑来滑去，结果一个没稳住，摔了一跤。",
+        "m_c": {
+            "status": [
+                "kitten"
+            ],
+            "trait": [
+                "daring",
+                "impulsive",
+                "noisy",
+                "troublesome",
+                "attention-seeker"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "bruises",
+                    "scrapes",
+                    "sprain"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_bruises_anycamp2multitraitkit",
+        "location": [
+            "beach:camp2"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "m_c在岩石上蹦跳时脚下一滑，摔了下去。洞底柔软的沙子缓冲了一下，但m_c还是受了些淤伤。",
+        "m_c": {
+            "status": [
+                "kitten"
+            ],
+            "trait": [
+                "daring",
+                "impulsive",
+                "noisy",
+                "troublesome",
+                "attention-seeker"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "bruises"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_snakebite_multimultitraitkit1",
+        "location": [
+            "beach"
+        ],
+        "season": [
+            "greenleaf",
+            "newleaf",
+            "leaf-fall"
+        ],
+        "frequency": 3,
+        "event_text": "m_c发现岩石上有个洞，像所有幼崽一样忍不住好奇，把爪子伸了进去。痛苦的尖叫声引得全营地的猫都跑了过来。原来，洞里住着一条蛇。",
+        "m_c": {
+            "status": [
+                "kitten"
+            ],
+            "trait": [
+                "daring",
+                "impulsive",
+                "noisy",
+                "troublesome",
+                "attention-seeker"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "snake bite"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c还是幼崽时被蛇咬伤，留下了伤疤。",
+                "death": "m_c被蛇咬伤后，因伤势过重死去。"
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_crackedpads_any1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "m_c沿着海岸行走时，踩到了几块尖锐的石头。",
+        "m_c": {
+            "age": [
+                "any"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "cracked pads"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_waterinlungs_any1",
+        "location": [
+            "beach"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 1,
+        "event_text": "海潮把m_c卷进了海里。m_c呛进了许多水，才终于逃了出来，此后一直咳个不停，呼吸也不顺畅。",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "water in their lungs"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "death": "m_c被卷进海里时肺里呛进了水，最终因此死去。"
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_war_savedenemy1",
+        "location": [
+            "beach"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "war"
+        ],
+        "frequency": 3,
+        "event_text": "在海岸边的一场战斗中，一名o_c_n武士险些被海浪卷走。m_c不顾自己的伤势跳进水里，把敌方武士拖回了沙滩。",
+        "m_c": {
+            "status": [
+                "warrior",
+                "deputy",
+                "leader",
+                "apprentice"
+            ],
+            "skill": [
+                "SWIMMER,1"
+            ],
+            "trait": [
+                "bold",
+                "daring",
+                "righteous",
+                "strict",
+                "compassionate",
+                "thoughtful",
+                "confident",
+                "adventurous",
+                "careful",
+                "calm",
+                "responsible",
+                "wise",
+                "sincere"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "battle_injury"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "death": "m_c救起一名溺水的敌方武士后，因伤势过重死去。",
+                "scar": "m_c在与敌对族群的战斗中留下了伤疤。"
+            }
+        ],
+        "relationships": [
+            {
+                "cats_from": [
+                    "clan",
+                    "high_aggress",
+                    "low_lawful"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "trust"
+                ],
+                "amount": -10,
+                "mutual": false,
+                "log": {
+                    "cats_from": "cat_from听说cat_to在战斗中救了一名敌方武士。"
+                }
+            }
+        ]
+    },
+    {
+        "event_id": "bch_injury_shipwreckfall_anymultiage1",
+        "location": [
+            "beach:camp3"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 1,
+        "event_text": "m_c试图爬上营地里的破船，却脚下一滑，重重地摔到了地上。",
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ],
+            "trait": [
+                "unruly",
+                "impulsive",
+                "attention-seeker",
+                "charming",
+                "skittish",
+                "daydreamer",
+                "fearless",
+                "bossy",
+                "troublesome",
+                "childish",
+                "playful",
+                "charismatic",
+                "bold",
+                "daring",
+                "confident",
+                "adventurous",
+                "shameless",
+                "sneaky",
+                "strange",
+                "rebellious"
+            ],
+            "skill": [
+                "-CLIMBER,2"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "broken bone"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "death": "m_c攀爬破船时失足摔落，因伤势过重死去。",
+                "scar": "m_c攀爬破船时失足摔落，留下了伤疤。"
+            }
+        ]
+    }
+]

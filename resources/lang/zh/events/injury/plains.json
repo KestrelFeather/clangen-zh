@@ -1,0 +1,204 @@
+[
+    {
+        "event_id": "pln_injury_bruisessprain_anyany1",
+        "location": [
+            "plains"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 3,
+        "event_text": "m_c在山丘间奔跑时被自己的腿绊倒，重重地摔在了地上。",
+        "m_c": {
+            "age": [
+                "any"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "bruises",
+                    "sprain"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "pln_injury_sprain_anyany1",
+        "location": [
+            "plains"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "雨水把营地里的地面变成了一片泥泞。m_c试图穿过烂泥时扭伤了爪子。",
+        "m_c": {
+            "age": [
+                "any"
+            ],
+            "status": [
+                "any"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "sprain"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "pln_injury_sore_anyany1",
+        "location": [
+            "plains"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "m_c最近跑了很远的路，浑身酸痛得厉害。",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "sore"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "pln_injury_mangledleg_multimultitraitany1",
+        "location": [
+            "plains"
+        ],
+        "season": [
+            "greenleaf",
+            "newleaf",
+            "leaf-fall"
+        ],
+        "sub_type": [],
+        "tags": [],
+        "frequency": 1,
+        "event_text": "m_c在营地外玩心大起，追着一只蝴蝶跑，不小心一脚踩进兔子洞，腿受了重伤，疼得叫了起来。",
+        "m_c": {
+            "age": [
+                "any"
+            ],
+            "status": [
+                "any"
+            ],
+            "trait": [
+                "childish",
+                "playful"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "mangled leg"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c不小心踩进兔子洞，腿上留下了伤疤。",
+                "death": "m_c不小心踩进兔子洞，最终因伤势过重死去。"
+            }
+        ]
+    },
+    {
+        "event_id": "pln_injury_sprain_anymultitraitapprentice1",
+        "location": [
+            "plains"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 4,
+        "event_text": "m_c巡逻时兴奋地跑来跑去，一脚踩进了兔子洞，扭伤了爪子，只好一路跛着回了营地。",
+        "m_c": {
+            "age": [
+                "adolescent"
+            ],
+            "status": [
+                "apprentice"
+            ],
+            "trait": [
+                "adventurous",
+                "bold",
+                "daring",
+                "playful",
+                "childish"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "sprain"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "plns_injury_fireflies",
+        "location": [
+            "plains:camp4"
+        ],
+        "season": [
+            "greenleaf",
+            "leaf-fall"
+        ],
+        "sub_type": [],
+        "tags": [],
+        "frequency": 2,
+        "event_text": "m_c在营地里追逐萤火虫时受了伤。",
+        "new_accessory": [],
+        "m_c": {
+            "age": [
+                "kitten",
+                "adolescent"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "minor_injury"
+                ]
+            }
+        ]
+    }
+]

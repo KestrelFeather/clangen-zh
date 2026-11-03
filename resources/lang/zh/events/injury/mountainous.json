@@ -1,0 +1,126 @@
+[
+    {
+        "event_id": "mtn_injury_brokenbone_multiany1",
+        "location": [
+            "mountainous"
+        ],
+        "season": [
+            "leaf-fall",
+            "leaf-bare"
+        ],
+        "frequency": 1,
+        "event_text": "m_c以为脚下只是积雪，没想到雪层突然塌陷。m_c摔下山去，跌断了一条腿。",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "broken bone"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c踩塌积雪摔下山去，留下了伤疤。",
+                "death": "m_c摔下山后，因伤势过重死去。"
+            }
+        ]
+    },
+    {
+        "event_id": "mtn_injury_mangledtail_anyany1",
+        "location": [
+            "mountainous"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 1,
+        "event_text": "落石砸中了m_c的尾巴，伤势很重。",
+        "m_c": {
+            "age": [
+                "adolescent",
+                "young adult",
+                "adult",
+                "senior adult",
+                "senior"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "mangled tail"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c被落石砸伤，留下了伤疤。",
+                "death": "m_c被落石砸中，因伤势过重死去。"
+            }
+        ]
+    },
+    {
+        "event_id": "mtn_injury_brokenbone_anyapprentice1",
+        "location": [
+            "mountainous"
+        ],
+        "season": [
+            "any"
+        ],
+        "frequency": 1,
+        "event_text": "m_c忍不住想炫耀一番，找了能找到的最高的山崖往上爬。结果脚下一滑，直直地摔向地面。",
+        "m_c": {
+            "status": [
+                "apprentice"
+            ],
+            "trait": [
+                "adventurous",
+                "ambitious",
+                "bold",
+                "childish",
+                "confident",
+                "daring",
+                "playful",
+                "troublesome"
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "broken bone"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "scar": "m_c从高崖上摔下来，留下了伤疤。",
+                "death": "m_c从高崖上摔下来后，因伤势过重死去。"
+            }
+        ]
+    }
+]

@@ -27,7 +27,7 @@ try {
     } finally { $env:PATH = $previousPath }
     Copy-Item localization/PREVIEW.zh-CN.md dist/ClanGenChinese/试玩说明.md
     Copy-Item localization/TERMINOLOGY.zh-CN.md dist/ClanGenChinese/术语依据.md
-    foreach ($doc in @('NAME-AFFIXES', 'PROFILE-HEALTH', 'MANAGEMENT', 'CLAN-ADMIN')) {
+    foreach ($doc in @('NAME-AFFIXES', 'PROFILE-HEALTH', 'MANAGEMENT', 'CLAN-ADMIN', 'INJURY-EVENTS')) {
         Copy-Item "localization/$doc.zh-CN.md" "dist/ClanGenChinese/$doc.zh-CN.md"
     }
     Copy-Item LICENSE.md dist/ClanGenChinese/LICENSE.md
